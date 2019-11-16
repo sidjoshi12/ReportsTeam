@@ -33,6 +33,14 @@
       <Name>ListControl.rdl</Name>
       <FullPath>ListControl.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ListControl1.rdl</Name>
+      <FullPath>ListControl1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>BaselIIMS.rdl</Name>
+      <FullPath>BaselIIMS.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
