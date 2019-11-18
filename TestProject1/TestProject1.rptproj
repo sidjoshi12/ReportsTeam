@@ -10,24 +10,16 @@
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>Report1.rdl</Name>
-      <FullPath>Report1.rdl</FullPath>
+      <Name>BaselIIMS.rdl</Name>
+      <FullPath>BaselIIMS.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Grouping.rdl</Name>
       <FullPath>Grouping.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>TableReport.rdl</Name>
-      <FullPath>TableReport.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Matrix.rdl</Name>
-      <FullPath>Matrix.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>MatrixReport.rdl</Name>
-      <FullPath>MatrixReport.rdl</FullPath>
+      <Name>ImageControl.rdl</Name>
+      <FullPath>ImageControl.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>ListControl.rdl</Name>
@@ -38,8 +30,28 @@
       <FullPath>ListControl1.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>BaselIIMS.rdl</Name>
-      <FullPath>BaselIIMS.rdl</FullPath>
+      <Name>Matrix.rdl</Name>
+      <FullPath>Matrix.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>MatrixReport.rdl</Name>
+      <FullPath>MatrixReport.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report1.rdl</Name>
+      <FullPath>Report1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>TableReport.rdl</Name>
+      <FullPath>TableReport.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>SubReportMain.rdl</Name>
+      <FullPath>SubReportMain.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>SubReportChild.rdl</Name>
+      <FullPath>SubReportChild.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
