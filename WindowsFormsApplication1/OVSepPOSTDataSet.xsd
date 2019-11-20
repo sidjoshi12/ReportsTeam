@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OVSepPOSTDataSet" targetNamespace="http://tempuri.org/OVSepPOSTDataSet.xsd" xmlns:mstns="http://tempuri.org/OVSepPOSTDataSet.xsd" xmlns="http://tempuri.org/OVSepPOSTDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="OVSepPOSTConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OVSepPOSTConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication1.Properties.Settings.GlobalReference.Default.OVSepPOSTConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="QRYBRANCHTableAdapter" GeneratorDataComponentClassName="QRYBRANCHTableAdapter" Name="QRYBRANCH" UserDataComponentName="QRYBRANCHTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OVSepPOSTConnectionString (Settings)" DbObjectName="OVSepPOST.dbo.QRYBRANCH" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT BranchCode, District, AreaStatus, Description, ZoneName, RegionName, RegionCode, ZoneCode, StateDescription, State, BranchName, RBI_Part_1, RBI_Part_2, MnthFreez, BranchType, GVKModel, dateformat, BrCurrencyType, BrChangeCurrency FROM dbo.QRYBRANCH</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="BranchCode" DataSetColumn="BranchCode" />
+              <Mapping SourceColumn="District" DataSetColumn="District" />
+              <Mapping SourceColumn="AreaStatus" DataSetColumn="AreaStatus" />
+              <Mapping SourceColumn="Description" DataSetColumn="Description" />
+              <Mapping SourceColumn="ZoneName" DataSetColumn="ZoneName" />
+              <Mapping SourceColumn="RegionName" DataSetColumn="RegionName" />
+              <Mapping SourceColumn="RegionCode" DataSetColumn="RegionCode" />
+              <Mapping SourceColumn="ZoneCode" DataSetColumn="ZoneCode" />
+              <Mapping SourceColumn="StateDescription" DataSetColumn="StateDescription" />
+              <Mapping SourceColumn="State" DataSetColumn="State" />
+              <Mapping SourceColumn="BranchName" DataSetColumn="BranchName" />
+              <Mapping SourceColumn="RBI_Part_1" DataSetColumn="RBI_Part_1" />
+              <Mapping SourceColumn="RBI_Part_2" DataSetColumn="RBI_Part_2" />
+              <Mapping SourceColumn="MnthFreez" DataSetColumn="MnthFreez" />
+              <Mapping SourceColumn="BranchType" DataSetColumn="BranchType" />
+              <Mapping SourceColumn="GVKModel" DataSetColumn="GVKModel" />
+              <Mapping SourceColumn="dateformat" DataSetColumn="dateformat" />
+              <Mapping SourceColumn="BrCurrencyType" DataSetColumn="BrCurrencyType" />
+              <Mapping SourceColumn="BrChangeCurrency" DataSetColumn="BrChangeCurrency" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OVSepPOSTDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OVSepPOSTDataSet" msprop:Generator_UserDSName="OVSepPOSTDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="QRYBRANCH" msprop:Generator_TableClassName="QRYBRANCHDataTable" msprop:Generator_TableVarName="tableQRYBRANCH" msprop:Generator_TablePropName="QRYBRANCH" msprop:Generator_RowDeletingName="QRYBRANCHRowDeleting" msprop:Generator_RowChangingName="QRYBRANCHRowChanging" msprop:Generator_RowEvHandlerName="QRYBRANCHRowChangeEventHandler" msprop:Generator_RowDeletedName="QRYBRANCHRowDeleted" msprop:Generator_UserTableName="QRYBRANCH" msprop:Generator_RowChangedName="QRYBRANCHRowChanged" msprop:Generator_RowEvArgName="QRYBRANCHRowChangeEvent" msprop:Generator_RowClassName="QRYBRANCHRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="BranchCode" msprop:Generator_ColumnVarNameInTable="columnBranchCode" msprop:Generator_ColumnPropNameInRow="BranchCode" msprop:Generator_ColumnPropNameInTable="BranchCodeColumn" msprop:Generator_UserColumnName="BranchCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="District" msprop:Generator_ColumnVarNameInTable="columnDistrict" msprop:Generator_ColumnPropNameInRow="District" msprop:Generator_ColumnPropNameInTable="DistrictColumn" msprop:Generator_UserColumnName="District" type="xs:short" minOccurs="0" />
+              <xs:element name="AreaStatus" msprop:Generator_ColumnVarNameInTable="columnAreaStatus" msprop:Generator_ColumnPropNameInRow="AreaStatus" msprop:Generator_ColumnPropNameInTable="AreaStatusColumn" msprop:Generator_UserColumnName="AreaStatus" type="xs:int" minOccurs="0" />
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ZoneName" msprop:Generator_ColumnVarNameInTable="columnZoneName" msprop:Generator_ColumnPropNameInRow="ZoneName" msprop:Generator_ColumnPropNameInTable="ZoneNameColumn" msprop:Generator_UserColumnName="ZoneName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegionName" msprop:Generator_ColumnVarNameInTable="columnRegionName" msprop:Generator_ColumnPropNameInRow="RegionName" msprop:Generator_ColumnPropNameInTable="RegionNameColumn" msprop:Generator_UserColumnName="RegionName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RegionCode" msprop:Generator_ColumnVarNameInTable="columnRegionCode" msprop:Generator_ColumnPropNameInRow="RegionCode" msprop:Generator_ColumnPropNameInTable="RegionCodeColumn" msprop:Generator_UserColumnName="RegionCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ZoneCode" msprop:Generator_ColumnVarNameInTable="columnZoneCode" msprop:Generator_ColumnPropNameInRow="ZoneCode" msprop:Generator_ColumnPropNameInTable="ZoneCodeColumn" msprop:Generator_UserColumnName="ZoneCode">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="StateDescription" msprop:Generator_ColumnVarNameInTable="columnStateDescription" msprop:Generator_ColumnPropNameInRow="StateDescription" msprop:Generator_ColumnPropNameInTable="StateDescriptionColumn" msprop:Generator_UserColumnName="StateDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="State" msprop:Generator_ColumnVarNameInTable="columnState" msprop:Generator_ColumnPropNameInRow="State" msprop:Generator_ColumnPropNameInTable="StateColumn" msprop:Generator_UserColumnName="State" type="xs:short" minOccurs="0" />
+              <xs:element name="BranchName" msprop:Generator_ColumnVarNameInTable="columnBranchName" msprop:Generator_ColumnPropNameInRow="BranchName" msprop:Generator_ColumnPropNameInTable="BranchNameColumn" msprop:Generator_UserColumnName="BranchName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RBI_Part_1" msprop:Generator_ColumnVarNameInTable="columnRBI_Part_1" msprop:Generator_ColumnPropNameInRow="RBI_Part_1" msprop:Generator_ColumnPropNameInTable="RBI_Part_1Column" msprop:Generator_UserColumnName="RBI_Part_1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RBI_Part_2" msprop:Generator_ColumnVarNameInTable="columnRBI_Part_2" msprop:Generator_ColumnPropNameInRow="RBI_Part_2" msprop:Generator_ColumnPropNameInTable="RBI_Part_2Column" msprop:Generator_UserColumnName="RBI_Part_2" type="xs:int" minOccurs="0" />
+              <xs:element name="MnthFreez" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnMnthFreez" msprop:Generator_ColumnPropNameInRow="MnthFreez" msprop:Generator_ColumnPropNameInTable="MnthFreezColumn" msprop:Generator_UserColumnName="MnthFreez" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BranchType" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBranchType" msprop:Generator_ColumnPropNameInRow="BranchType" msprop:Generator_ColumnPropNameInTable="BranchTypeColumn" msprop:Generator_UserColumnName="BranchType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GVKModel" msprop:Generator_ColumnVarNameInTable="columnGVKModel" msprop:Generator_ColumnPropNameInRow="GVKModel" msprop:Generator_ColumnPropNameInTable="GVKModelColumn" msprop:Generator_UserColumnName="GVKModel" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="5" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="dateformat" msprop:Generator_ColumnVarNameInTable="columndateformat" msprop:Generator_ColumnPropNameInRow="dateformat" msprop:Generator_ColumnPropNameInTable="dateformatColumn" msprop:Generator_UserColumnName="dateformat" type="xs:int" minOccurs="0" />
+              <xs:element name="BrCurrencyType" msprop:Generator_ColumnVarNameInTable="columnBrCurrencyType" msprop:Generator_ColumnPropNameInRow="BrCurrencyType" msprop:Generator_ColumnPropNameInTable="BrCurrencyTypeColumn" msprop:Generator_UserColumnName="BrCurrencyType" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BrChangeCurrency" msprop:Generator_ColumnVarNameInTable="columnBrChangeCurrency" msprop:Generator_ColumnPropNameInRow="BrChangeCurrency" msprop:Generator_ColumnPropNameInTable="BrChangeCurrencyColumn" msprop:Generator_UserColumnName="BrChangeCurrency" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

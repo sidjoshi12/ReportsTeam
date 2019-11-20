@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="AdvData">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=dbserver2\dbserver2;Initial Catalog=DENAMISDBOCT2017;user id=dm085;password=1808</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>df7efb8a-cd6e-4335-8371-43a82a9091ea</DataSourceID>
+</RptDataSource>

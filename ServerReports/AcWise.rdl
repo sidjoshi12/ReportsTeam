@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.77083in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox7">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Customer Entity Id</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox7</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox9">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Account Entity Id</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox11">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Customer Name</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox11</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="CustomerEntityId">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!CustomerEntityId.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>CustomerEntityId</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="AccountEntityId">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!AccountEntityId.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>AccountEntityId</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="CustomerName">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!CustomerName.Value</Value>
+                              <Style />
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>CustomerName</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <KeepWithGroup>After</KeepWithGroup>
+            </TablixMember>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>reportData</DataSetName>
+        <Top>0.02778in</Top>
+        <Left>0.11333in</Left>
+        <Height>0.5in</Height>
+        <Width>3.77083in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>2.13542in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <PageHeader>
+      <Height>0.32292in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>0.70833in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <DataSourceReference>AdvData</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>4ddd8f5c-f51d-46e4-93b7-74fbc657bb97</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="reportData">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@TimeKey">
+            <Value>=Parameters!TimeKey.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@BranchCode">
+            <Value>=Parameters!BranchCode.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandText>select 
+	AdvAcBasicDetail.BranchCode
+	,AdvAcBasicDetail.CustomerEntityId
+	,AdvAcBasicDetail.AccountEntityId
+	,CustomerBasicDetail.CustomerName
+	,AdvAcBasicDetail.AccountName
+	,AdvAcBasicDetail.OriginalLimit
+	,AdvAcBalanceDetail.Balance
+	,AdvAcBasicDetail.ActivityAlt_Key
+	,DimActivity.ActivityName
+from AdvAcBasicDetail
+inner join CustomerBasicDetail
+on CustomerBasicDetail.CustomerEntityId=AdvAcBasicDetail.CustomerEntityId
+and CustomerBasicDetail.EffectiveFromTimeKey&lt;=@TimeKey and CustomerBasicDetail.EffectiveToTimeKey&gt;=@TimeKey
+inner join AdvAcBalanceDetail
+on AdvAcBalanceDetail.AccountEntityId=AdvAcBasicDetail.AccountEntityId
+and AdvAcBalanceDetail.EffectiveFromTimeKey&lt;=@TimeKey and AdvAcBalanceDetail.EffectiveToTimeKey&gt;=@TimeKey
+inner join DimActivity
+on DimActivity.ActivityAlt_Key=AdvAcBasicDetail.ActivityAlt_Key
+where AdvAcBasicDetail.EffectiveFromTimeKey&lt;=@TimeKey
+and AdvAcBasicDetail.EffectiveToTimeKey&gt;=@TimeKey and adjdt is  null
+and AdvAcBasicDetail.BranchCode=@BranchCode</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="BranchCode">
+          <DataField>BranchCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerEntityId">
+          <DataField>CustomerEntityId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AccountEntityId">
+          <DataField>AccountEntityId</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CustomerName">
+          <DataField>CustomerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AccountName">
+          <DataField>AccountName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OriginalLimit">
+          <DataField>OriginalLimit</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Balance">
+          <DataField>Balance</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ActivityAlt_Key">
+          <DataField>ActivityAlt_Key</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="ActivityName">
+          <DataField>ActivityName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsDate">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysDates</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DateKey">
+          <DataField>DateKey</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="DateCaption">
+          <DataField>DateCaption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsAdminValue">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@TimeKey">
+            <Value>=Parameters!TimeKey.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLoginID">
+            <Value>=Parameters!UserLoginID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocation">
+            <Value>=Parameters!UserLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocationCode">
+            <Value>=Parameters!UserLocationCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MisLocation">
+            <Value>=Parameters!MisLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysAdminValue_Grp_20Nov19</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AdminValue">
+          <DataField>AdminValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AdminValueLable">
+          <DataField>AdminValueLable</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsAD">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysAD</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Department">
+          <DataField>Department</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsDynampcGrp">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLoginID">
+            <Value>=Parameters!UserLoginID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocation">
+            <Value>=Parameters!UserLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocationCode">
+            <Value>=Parameters!UserLocationCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MisLocation">
+            <Value>=Parameters!MisLocation.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysDynamicGrp</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DynamicGroup_Key">
+          <DataField>DynamicGroup_Key</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupName">
+          <DataField>DynamicGroupName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupValue">
+          <DataField>DynamicGroupValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupLabel">
+          <DataField>DynamicGroupLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="TimeKey">
+      <DataType>Integer</DataType>
+      <Prompt>Time Key</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsDate</DataSetName>
+          <ValueField>DateKey</ValueField>
+          <LabelField>DateCaption</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="BranchCode">
+      <DataType>String</DataType>
+      <Prompt>Branch Code</Prompt>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="UserName">
+      <DataType>String</DataType>
+      <Prompt>User Name</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>=Right(User!UserID, Len(User!UserID) - InStr(User!UserID, "\"))</Value>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="UserLoginID">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="D2K"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>User Login ID</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UserLocation">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="D2K"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>User Location</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UserLocationCode">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="D2K"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>User Location Code</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MisLocation">
+      <DataType>String</DataType>
+      <Prompt>Mis Location</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsAD</DataSetName>
+          <ValueField>Department</ValueField>
+          <LabelField>Department</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="DynamicGrp">
+      <DataType>String</DataType>
+      <Prompt>Dynamic Grp</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsDynampcGrp</DataSetName>
+          <ValueField>DynamicGroupValue</ValueField>
+          <LabelField>DynamicGroupName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>5b831562-0b48-4d86-bc0f-bbc764c3eeef</rd:ReportID>
+</Report>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Data;
 
 namespace WindowsFormsApplication1
 {
@@ -25,6 +26,19 @@ namespace WindowsFormsApplication1
                 ErrorMsg = "";
                 ErrorMsg = ex.Message;
             }
+        }
+        public static DataTable getDataTable(string sql,string tableName="Table1")
+        {
+            SqlConnection cn = new SqlConnection(cnstring);
+            cn.Open();
+            SqlDataAdapter ad = new SqlDataAdapter(sql, cn);
+            DataTable dt = new DataTable(tableName);
+            ad.Fill(dt);
+            cn.Close();
+            if (dt.Rows.Count > 0)
+                return dt;
+            else
+                return null;
         }
     }
 }

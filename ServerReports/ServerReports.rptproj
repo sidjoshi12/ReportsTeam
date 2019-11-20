@@ -3,51 +3,19 @@
   <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
   <DataSources>
     <ProjectItem>
-      <Name>mySharedDataSource.rds</Name>
-      <FullPath>mySharedDataSource.rds</FullPath>
+      <Name>AdvData.rds</Name>
+      <FullPath>AdvData.rds</FullPath>
     </ProjectItem>
   </DataSources>
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>BaselIIMS.rdl</Name>
-      <FullPath>BaselIIMS.rdl</FullPath>
+      <Name>Rpt-10536-Progress_Under_Dena_Niwas_Housing_Loan_Scheme.rdl</Name>
+      <FullPath>Rpt-10536-Progress_Under_Dena_Niwas_Housing_Loan_Scheme.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Grouping.rdl</Name>
-      <FullPath>Grouping.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ImageControl.rdl</Name>
-      <FullPath>ImageControl.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ListControl.rdl</Name>
-      <FullPath>ListControl.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ListControl1.rdl</Name>
-      <FullPath>ListControl1.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>MatrixReport.rdl</Name>
-      <FullPath>MatrixReport.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Report1.rdl</Name>
-      <FullPath>Report1.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>SubReportChild.rdl</Name>
-      <FullPath>SubReportChild.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>SubReportMain.rdl</Name>
-      <FullPath>SubReportMain.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>TableReport.rdl</Name>
-      <FullPath>TableReport.rdl</FullPath>
+      <Name>AcWise.rdl</Name>
+      <FullPath>AcWise.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -57,12 +25,9 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
-        <TargetServerURL>http://d2k62/ReportServer_SQLEXPRESS</TargetServerURL>
-        <TargetFolder>TestProject1</TargetFolder>
+        <TargetFolder>ServerReports</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
-        <OverwriteDataSources>true</OverwriteDataSources>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
-        <OverwriteDatasets>true</OverwriteDatasets>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
       </Options>
     </Configuration>
@@ -72,7 +37,7 @@
       <Options>
         <OutputPath>bin\DebugLocal</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
-        <TargetFolder>TestProject1</TargetFolder>
+        <TargetFolder>ServerReports</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -84,7 +49,7 @@
       <Options>
         <OutputPath>bin\Release</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
-        <TargetFolder>TestProject1</TargetFolder>
+        <TargetFolder>ServerReports</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
