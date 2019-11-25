@@ -1,0 +1,2386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="AdvData">
+      <DataSourceReference>mySharedDataSource</DataSourceReference>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>4c292e85-79de-478b-b729-b4b66fabeed1</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsReportFormat">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>reportformatSp</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="SrNo">
+          <DataField>SrNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BankName">
+          <DataField>BankName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddress">
+          <DataField>BankAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameFontSize">
+          <DataField>BankNameFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontSize">
+          <DataField>HeadFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameFontFamily">
+          <DataField>BankNameFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameFontStyle">
+          <DataField>BankNameFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontFamily">
+          <DataField>HeadFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontStyle">
+          <DataField>HeadFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameFontWeight">
+          <DataField>BankNameFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontWeight">
+          <DataField>HeadFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameColour">
+          <DataField>BankNameColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadColour">
+          <DataField>HeadColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontSize">
+          <DataField>BankAddFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadBGColour">
+          <DataField>HeadBGColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontSize">
+          <DataField>BodyFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontFamilly">
+          <DataField>BankAddFontFamilly</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontFamily">
+          <DataField>BodyFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontStyle">
+          <DataField>BankAddFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontStyle">
+          <DataField>BodyFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontWeight">
+          <DataField>BankAddFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontColour">
+          <DataField>BankAddFontColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontWeight">
+          <DataField>BodyFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontSize">
+          <DataField>ReportNameFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyColour">
+          <DataField>BodyColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyBGcolour">
+          <DataField>BodyBGcolour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontFamilly">
+          <DataField>ReportNameFontFamilly</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontStyle">
+          <DataField>ReportNameFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantTotalFontSize">
+          <DataField>GrantTotalFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantFontFamily">
+          <DataField>GrantFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontWeight">
+          <DataField>ReportNameFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantFontStyle">
+          <DataField>GrantFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontColour">
+          <DataField>ReportNameFontColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantFontWeight">
+          <DataField>GrantFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantColour">
+          <DataField>GrantColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantBGcolour">
+          <DataField>GrantBGcolour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FormatG">
+          <DataField>FormatG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FormatF">
+          <DataField>FormatF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ImagePath">
+          <DataField>ImagePath</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BranchLbl">
+          <DataField>BranchLbl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegionLbl">
+          <DataField>RegionLbl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ZoneLbl">
+          <DataField>ZoneLbl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankLbl">
+          <DataField>BankLbl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AmountIn">
+          <DataField>AmountIn</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ReportPathName">
+          <DataField>ReportPathName</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Tier">
+          <DataField>Tier</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="HindiFont">
+          <DataField>HindiFont</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HindiFontStyle">
+          <DataField>HindiFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HindiFontWeight">
+          <DataField>HindiFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BranchTotal">
+          <DataField>BranchTotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegionTotal">
+          <DataField>RegionTotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ZoneTotal">
+          <DataField>ZoneTotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankTotal">
+          <DataField>BankTotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerID">
+          <DataField>CustomerID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerName">
+          <DataField>CustomerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="D2KName">
+          <DataField>D2KName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FooterFontFamily">
+          <DataField>FooterFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FooterFontSize">
+          <DataField>FooterFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FooterFontStyle">
+          <DataField>FooterFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FooterFontWeight">
+          <DataField>FooterFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeaderDetailFontFamily">
+          <DataField>HeaderDetailFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeaderDetailFontSize">
+          <DataField>HeaderDetailFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeaderDetailFontStyle">
+          <DataField>HeaderDetailFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeaderDetailFontWeight">
+          <DataField>HeaderDetailFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankCode">
+          <DataField>BankCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Active">
+          <DataField>Active</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BranchVisibility">
+          <DataField>BranchVisibility</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegionVisibility">
+          <DataField>RegionVisibility</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ZoneVisibility">
+          <DataField>ZoneVisibility</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankVisibility">
+          <DataField>BankVisibility</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsAD">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>uspAD</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Department">
+          <DataField>Department</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsVersion">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@reportname">
+            <Value>=Parameters!reportname.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DtEnter">
+            <Value>=Parameters!DtEnter.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-ReportVersion</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="versionno">
+          <DataField>versionno</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="reportid">
+          <DataField>reportid</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Frequency_Period">
+          <DataField>Frequency_Period</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportTypeLabel">
+          <DataField>ReportTypeLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportTypeValue">
+          <DataField>ReportTypeValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsAdminValue">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@DtEnter">
+            <Value>=Parameters!DtEnter.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLoginID">
+            <Value>=Parameters!UserLoginID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocation">
+            <Value>=Parameters!UserLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocationCode">
+            <Value>=Parameters!UserLocationCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MisLocation">
+            <Value>=Parameters!MisLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysAdminValue_Grp</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AdminValue">
+          <DataField>AdminValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AdminValueLable">
+          <DataField>AdminValueLable</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsDynamicGrp">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLoginID">
+            <Value>=Parameters!UserLoginID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocation">
+            <Value>=Parameters!UserLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocationCode">
+            <Value>=Parameters!UserLocationCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MisLocation">
+            <Value>=Parameters!MisLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ReportType">
+            <Value>=Parameters!ReportType.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>LEGAL-SysDynamicGrp</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DynamicGroup_Key">
+          <DataField>DynamicGroup_Key</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupName">
+          <DataField>DynamicGroupName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupValue">
+          <DataField>DynamicGroupValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupLabel">
+          <DataField>DynamicGroupLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsDynamicGrpSUB">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLoginID">
+            <Value>=Parameters!UserLoginID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocation">
+            <Value>=Parameters!UserLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocationCode">
+            <Value>=Parameters!UserLocationCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MisLocation">
+            <Value>=Parameters!MisLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ReportType">
+            <Value>=Parameters!ReportType.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>LEGAL-SysDynamicGrp_SUB</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DynamicGroup_Key">
+          <DataField>DynamicGroup_Key</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupName">
+          <DataField>DynamicGroupName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupValue">
+          <DataField>DynamicGroupValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupLabel">
+          <DataField>DynamicGroupLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsDynamicGrpSUB_Lbl">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@SubDynamicGrp">
+            <Value>=Parameters!SubDynamicGrp.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysSubDynamicGrp_Lbl</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="SubDynamicGroupLabel">
+          <DataField>SubDynamicGroupLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SubDynamicGroupLabelforSummary">
+          <DataField>SubDynamicGroupLabelforSummary</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsDynamicGrp_Lbl">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@SubDynamicGrp">
+            <Value>=Parameters!SubDynamicGrp.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysDynamicGrp_Lbl</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DynamicGroupLabel1">
+          <DataField>DynamicGroupLabel1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupLabel">
+          <DataField>DynamicGroupLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DsRange">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <CommandText>SELECT '&lt;ALL&gt;' AS Label,0 As Value
+UNION ALL
+SELECT 'Cases filed upto 1 Year',1
+UNION ALL
+SELECT 'Above 1 year up to 2 years',2
+UNION ALL
+SELECT 'Above 2 years  up to 3 years',3
+UNION ALL
+SELECT 'Above 3 years  up to 5 years',4
+UNION ALL
+SELECT 'Above 5 years up to 10 years',5
+UNION ALL
+SELECT 'Above 10 years',6</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Label">
+          <DataField>Label</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Value">
+          <DataField>Value</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="Legal16B">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@AdminValue">
+            <Value>=Parameters!AdminValue.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@SubDynamicGrp">
+            <Value>=Parameters!SubDynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MisLocation">
+            <Value>=Parameters!MisLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@cost">
+            <Value>=Parameters!cost.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Range">
+            <Value>=Parameters!Range.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DtEnter">
+            <Value>=Parameters!DtEnter.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@From">
+            <Value>=Parameters!From.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@to">
+            <Value>=Parameters!to.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Recordstatus">
+            <Value>=Parameters!Recordstatus.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Tier">
+            <Value>=Parameters!Tier.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Amount">
+            <Value>=Parameters!Amount.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>[Rpt-Legal-Plus-16B]</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DynamicGrp">
+          <DataField>DynamicGrp</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SubDynamicGrp">
+          <DataField>SubDynamicGrp</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ZoneName">
+          <DataField>ZoneName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegionName">
+          <DataField>RegionName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BranchName">
+          <DataField>BranchName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PendingCases">
+          <DataField>PendingCases</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="PendingAmt">
+          <DataField>PendingAmt</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="DecreeCases">
+          <DataField>DecreeCases</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DecreeAmt">
+          <DataField>DecreeAmt</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix2">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>2.03393in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.57784in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.4913in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.35209in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Constant">Status</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!HeadFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!HeadFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!HeadFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!HeadFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!HeadColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox2</rd:DefaultName>
+                          <ZIndex>203</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!HeadBGColour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox39">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Constant">Count</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!HeadFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!HeadFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!HeadFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!HeadFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>g</Format>
+                                    <Color>=First(Fields!HeadColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox37</rd:DefaultName>
+                          <ZIndex>202</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <BackgroundColor>=First(Fields!HeadBGColour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox45">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Constant">Amount Claimed*</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!HeadFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!HeadFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!HeadFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!HeadFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>f</Format>
+                                    <Color>=First(Fields!HeadColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox43</rd:DefaultName>
+                          <ZIndex>201</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </RightBorder>
+                            <BackgroundColor>=First(Fields!HeadBGColour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>1pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox171">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Microsoft.VisualBasic.Interaction.iif(Parameters!DynamicGrp.Value = "BANK" And Parameters!SubDynamicGrp.Value = "BANK", "BANK", Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "BANK" And (Parameters!SubDynamicGrp.Value = "ZO" Or Parameters!SubDynamicGrp.Value = "RO") And (Parameters!Tier.Value = 3 Or Parameters!Tier.Value = 4), First(Fields!SubDynamicGroupLabelforSummary.Value, "dsDynamicGrpSUB_Lbl") &amp; " " &amp; Fields!SubDynamicGrp.Value, Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "BANK" And Parameters!SubDynamicGrp.Value = "BO" And Parameters!Tier.Value = 2, First(Fields!BranchLbl.Value, "dsReportFormat") &amp; " " &amp; Fields!BranchName.Value, Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "BANK" And Parameters!SubDynamicGrp.Value = "BO" And Parameters!Tier.Value &lt;&gt; 4, First(Fields!SubDynamicGroupLabel.Value, "dsDynamicGrpSUB_Lbl") &amp; " " &amp; Fields!SubDynamicGrp.Value &amp; "," &amp; First(Fields!BranchLbl.Value, "dsReportFormat") &amp; " " &amp; Fields!BranchName.Value, Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "BANK" And Parameters!SubDynamicGrp.Value = "BO", First(Fields!DynamicGroupLabel1.Value, "dsDynamicGrp_Lbl") &amp; " " &amp; Fields!DynamicGrp.Value &amp; "," &amp; First(Fields!SubDynamicGroupLabel.Value, "dsDynamicGrpSUB_Lbl") &amp; " " &amp; Fields!SubDynamicGrp.Value &amp; "," &amp; First(Fields!BranchLbl.Value, "dsReportFormat") &amp; " " &amp; Fields!BranchName.Value, Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "ZO" And Parameters!SubDynamicGrp.Value = "ZO" And Parameters!Tier.Value = 4, First(Fields!SubDynamicGroupLabelforSummary.Value, "dsDynamicGrpSUB_Lbl") &amp; " " &amp; Fields!SubDynamicGrp.Value, Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "ZO" And Parameters!SubDynamicGrp.Value = "RO" And (Parameters!Tier.Value = 3 Or Parameters!Tier.Value = 4), First(Fields!SubDynamicGroupLabel.Value, "dsDynamicGrpSUB_Lbl") &amp; " " &amp; Fields!SubDynamicGrp.Value, Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "ZO" And Parameters!SubDynamicGrp.Value = "BO" And (Parameters!Tier.Value = 3 Or Parameters!Tier.Value = 4), First(Fields!DynamicGroupLabel1.Value, "dsDynamicGrp_Lbl") &amp; " " &amp; Fields!DynamicGrp.Value &amp; "," &amp; First(Fields!BranchLbl.Value, "dsReportFormat") &amp; " " &amp; Fields!BranchName.Value, Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "RO" And Parameters!SubDynamicGrp.Value = "RO" And (Parameters!Tier.Value = 3 Or Parameters!Tier.Value = 4), First(Fields!SubDynamicGroupLabel.Value, "dsDynamicGrpSUB_Lbl") &amp; " " &amp; Fields!SubDynamicGrp.Value, Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "RO" And Parameters!SubDynamicGrp.Value = "BO", First(Fields!SubDynamicGroupLabel.Value, "dsDynamicGrpSUB_Lbl") &amp; " " &amp; Fields!DynamicGrp.Value &amp; "," &amp; First(Fields!BranchLbl.Value, "dsReportFormat") &amp; " " &amp; Fields!BranchName.Value, Microsoft.VisualBasic.Interaction.IIF(Parameters!DynamicGrp.Value = "BO" And Parameters!SubDynamicGrp.Value = "BO", First(Fields!BranchLbl.Value, "dsReportFormat") &amp; " " &amp; Fields!BranchName.Value, "")))))))))))</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox170</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>3</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox50">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Constant">Pending</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox27</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="below6months3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!PendingCases.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>below6months</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="below6monthsamount3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!PendingAmt.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>f2</Format>
+                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>below6monthsamount</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox51">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Constant">RC</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox29</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="oneyear3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!DecreeCases.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>oneyear</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="oneyearamount3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!DecreeAmt.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>f2</Format>
+                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>oneyearamount</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox91">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Constant">Total</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox85</rd:DefaultName>
+                          <ZIndex>23</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox92">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!PendingCases.Value)+Sum(Fields!DecreeCases.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox85</rd:DefaultName>
+                          <ZIndex>23</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox93">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!PendingAmt.Value)+Sum(Fields!DecreeAmt.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>f2</Format>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox85</rd:DefaultName>
+                          <ZIndex>23</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <FixedData>true</FixedData>
+                  <KeepWithGroup>After</KeepWithGroup>
+                  <RepeatOnNewPage>true</RepeatOnNewPage>
+                  <KeepTogether>true</KeepTogether>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="DynamicGrp2">
+                    <GroupExpressions>
+                      <GroupExpression>=Fields!DynamicGrp.Value</GroupExpression>
+                    </GroupExpressions>
+                    <PageBreak>
+                      <BreakLocation>Between</BreakLocation>
+                    </PageBreak>
+                  </Group>
+                  <SortExpressions>
+                    <SortExpression>
+                      <Value>=Fields!DynamicGrp.Value</Value>
+                    </SortExpression>
+                  </SortExpressions>
+                  <TablixMembers>
+                    <TablixMember>
+                      <Group Name="SubDynamicGrp2">
+                        <GroupExpressions>
+                          <GroupExpression>=Fields!SubDynamicGrp.Value</GroupExpression>
+                        </GroupExpressions>
+                        <PageBreak>
+                          <BreakLocation>Between</BreakLocation>
+                        </PageBreak>
+                      </Group>
+                      <SortExpressions>
+                        <SortExpression>
+                          <Value>=Fields!SubDynamicGrp.Value</Value>
+                        </SortExpression>
+                      </SortExpressions>
+                      <TablixMembers>
+                        <TablixMember>
+                          <Group Name="BranchName2">
+                            <GroupExpressions>
+                              <GroupExpression>=IIF(Parameters!SubDynamicGrp.Value = "BO",Fields!BranchName.Value,Parameters!SubDynamicGrp.Value)</GroupExpression>
+                            </GroupExpressions>
+                            <PageBreak>
+                              <BreakLocation>Between</BreakLocation>
+                            </PageBreak>
+                          </Group>
+                          <SortExpressions>
+                            <SortExpression>
+                              <Value>=Fields!BranchName.Value</Value>
+                            </SortExpression>
+                          </SortExpressions>
+                          <TablixMembers>
+                            <TablixMember />
+                            <TablixMember />
+                            <TablixMember />
+                            <TablixMember />
+                          </TablixMembers>
+                        </TablixMember>
+                      </TablixMembers>
+                    </TablixMember>
+                  </TablixMembers>
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <RepeatRowHeaders>true</RepeatRowHeaders>
+            <FixedRowHeaders>true</FixedRowHeaders>
+            <KeepTogether>true</KeepTogether>
+            <DataSetName>Legal16B</DataSetName>
+            <Top>0.12604in</Top>
+            <Left>0.2761in</Left>
+            <Height>1.35209in</Height>
+            <Width>7.10307in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>1.62396in</Height>
+        <Style />
+      </Body>
+      <Width>7.40063in</Width>
+      <Page>
+        <PageHeader>
+          <Height>2.54791in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Line Name="line1">
+              <Top>2.45416in</Top>
+              <Left>0.2761in</Left>
+              <Height>0in</Height>
+              <Width>7.10307in</Width>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Textbox Name="textbox199">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!Bankname.Value</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!BankNameFontWeight.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!BankNameFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!BankNameFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!BankNameFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.13973in</Top>
+              <Left>2.17644in</Left>
+              <Height>0.6332in</Height>
+              <Width>3.34829in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox198">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!Bankadd.Value</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!BankAddFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!BankAddFontFamilly.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!BankAddFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!BankAddFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.84237in</Top>
+              <Left>0.2761in</Left>
+              <Height>0.24235in</Height>
+              <Width>7.10307in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox205">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Summary Of DRT Cases as on : " &amp; Parameters!DtEnter.Value</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!BankAddFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!BankAddFontFamilly.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!BankAddFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!BankAddFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.15416in</Top>
+              <Left>0.2761in</Left>
+              <Height>0.27084in</Height>
+              <Width>7.10307in</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox8">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!SubDynamicGrp.Label</Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.49444in</Top>
+              <Left>4.16459in</Left>
+              <Height>0.25in</Height>
+              <Width>3.21458in</Width>
+              <ZIndex>4</ZIndex>
+              <Visibility>
+                <Hidden>=iif(First(Fields!BranchVisibility.Value, "dsReportFormat") ="Y", FALSE, TRUE )</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox28">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="(Amt. in Rs. : " &amp; Parameters!cost.Label &amp;")"</Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>D</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>2.06389in</Top>
+              <Left>5.20708in</Left>
+              <Height>0.25in</Height>
+              <Width>2.17209in</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Image Name="image2">
+              <Source>External</Source>
+              <Value>=First(Fields!ImagePath.Value, "dsReportFormat")</Value>
+              <Sizing>Fit</Sizing>
+              <Top>0.13973in</Top>
+              <Left>0.2761in</Left>
+              <Height>0.64708in</Height>
+              <Width>1.50103in</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Image>
+            <Textbox Name="textbox12">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=  IIF(Parameters!AdminValue.Count = COUNT(Fields!AdminValue.Value, "dsAdminValue")
+	   ,First(Fields!DynamicGroupLabel.Value, "dsDynamicGrp_Lbl") &amp; " &lt;All&gt;"
+	   ,IIF(Parameters!AdminValue.Count&gt;5 AND Parameters!AdminValue.Count&lt;COUNT(Fields!AdminValue.Value, "dsAdminValue")
+			,First(Fields!DynamicGroupLabel.Value, "dsDynamicGrp_Lbl") &amp; " Multi Value Selection"
+			,First(Fields!DynamicGroupLabel.Value, "dsDynamicGrp_Lbl") &amp; " " &amp; JOIN(Parameters!AdminValue.Label,", ")))</Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>2.06389in</Top>
+              <Left>0.2761in</Left>
+              <Height>0.25in</Height>
+              <Width>4.61177in</Width>
+              <ZIndex>7</ZIndex>
+              <Visibility>
+                <Hidden>=Microsoft.VisualBasic.Interaction.iif(First(Fields!RegionVisibility.Value, "dsReportFormat") = "Y", False, True)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox9">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Record Selected : " &amp; IIF(Parameters!Recordstatus.Value=0,"ALL","Live")</Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.49444in</Top>
+              <Left>0.2761in</Left>
+              <Height>0.25in</Height>
+              <Width>1.59478in</Width>
+              <ZIndex>8</ZIndex>
+              <Visibility>
+                <Hidden>=Microsoft.VisualBasic.Interaction.iif(First(Fields!BranchVisibility.Value, "dsReportFormat") = "Y", False, True)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>= "(Range : " &amp; Parameters!Range.Label &amp; " )"</Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>1.82778in</Top>
+              <Left>0.2761in</Left>
+              <Height>0.19792in</Height>
+              <Width>2.68098in</Width>
+              <ZIndex>9</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox29">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="(Amount : " &amp; Parameters!Amount.Label &amp; ")"</Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Format>D</Format>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.77396in</Top>
+              <Left>4.65562in</Left>
+              <Height>0.25in</Height>
+              <Width>2.74501in</Width>
+              <ZIndex>10</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style />
+        </PageHeader>
+        <PageFooter>
+          <Height>0.80122in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <ReportItems>
+            <Line Name="line2">
+              <Top>0.0625in</Top>
+              <Left>0.2761in</Left>
+              <Height>0in</Height>
+              <Width>7.10307in</Width>
+              <Style>
+                <Border>
+                  <Style>Solid</Style>
+                </Border>
+              </Style>
+            </Line>
+            <Textbox Name="textbox2033333">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="User : " &amp; IIF(Parameters!UserLoginID.Value = "D2K", User!UserID, Parameters!UserLoginID.Value)</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!FooterFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!FooterFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!FooterFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!FooterFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.16961in</Top>
+              <Left>2.06532in</Left>
+              <Height>0.26025in</Height>
+              <Width>1.16908in</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox206">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=First(Fields!D2KName.Value, "dsReportFormat")</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!FooterFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!FooterFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!FooterFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!FooterFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.16961in</Top>
+              <Left>0.2761in</Left>
+              <Height>0.26025in</Height>
+              <Width>1.71978in</Width>
+              <ZIndex>2</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox466">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=iif(Parameters!ReportPath.Value = True, "Path of the Report : /" &amp; Globals!ReportFolder &amp; "/" &amp; Globals!ReportName, "")</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!FooterFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!FooterFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!FooterFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!FooterFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.4993in</Top>
+              <Left>0.2761in</Left>
+              <Height>0.20817in</Height>
+              <Width>3.97835in</Width>
+              <ZIndex>3</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox2022222">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Report Run Date/Time  : " &amp;format(now,"dd/MM/yyyy hh:mm:ss:tt")</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!FooterFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!FooterFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!FooterFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!FooterFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.16961in</Top>
+              <Left>3.30384in</Left>
+              <Height>0.26025in</Height>
+              <Width>2.9327in</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox71">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!ReportID.Value</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!FooterFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!FooterFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!FooterFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!FooterFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.4993in</Top>
+              <Left>4.40823in</Left>
+              <Height>0.20817in</Height>
+              <Width>1.60955in</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox2044444">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Parameters!Version.Value</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!FooterFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!FooterFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!FooterFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!FooterFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.4993in</Top>
+              <Left>6.08722in</Left>
+              <Height>0.20817in</Height>
+              <Width>1.29195in</Width>
+              <ZIndex>6</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox204">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>="Page No.  " &amp;Globals!PageNumber &amp; "  of  " &amp;Globals!TotalPages</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!FooterFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!FooterFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!FooterFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!FooterFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>0.16961in</Top>
+              <Left>6.23654in</Left>
+              <Height>0.26025in</Height>
+              <Width>1.14263in</Width>
+              <ZIndex>7</ZIndex>
+              <Style>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <Style />
+        </PageFooter>
+        <PageHeight>11.69in</PageHeight>
+        <PageWidth>8.27in</PageWidth>
+        <InteractiveHeight>11in</InteractiveHeight>
+        <InteractiveWidth>8.5in</InteractiveWidth>
+        <LeftMargin>0.25in</LeftMargin>
+        <RightMargin>0.25in</RightMargin>
+        <TopMargin>0.2in</TopMargin>
+        <BottomMargin>0.2in</BottomMargin>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="UserLoginID">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="Legal"</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>UserLoginID</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="UserName">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Parameters!UserLoginID.Value</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UserName</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="UserLocation">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="D2K"</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>UserLocation</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="UserLocationCode">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="D2K"</Value>
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>UserLocationCode</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="MisLocation">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsAD</DataSetName>
+          <ValueField>Department</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>MisLocation</Prompt>
+      <Hidden>true</Hidden>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsAD</DataSetName>
+          <ValueField>Department</ValueField>
+          <LabelField>Department</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="DtEnter">
+      <DataType>String</DataType>
+      <Prompt>DtEnter</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="From">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>From</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="to">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <Values>
+          <Value xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true" />
+        </Values>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>to</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="reportname">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Globals!ReportName</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>reportname</Prompt>
+      <Hidden>true</Hidden>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>=Globals!ReportName</Value>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="ReportType">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>ReportTypeValue</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Report Type</Prompt>
+      <Hidden>true</Hidden>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>ReportTypeValue</ValueField>
+          <LabelField>ReportTypeLabel</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="DynamicGrp">
+      <DataType>String</DataType>
+      <Prompt>Dynamic Grp</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsDynamicGrp</DataSetName>
+          <ValueField>DynamicGroupValue</ValueField>
+          <LabelField>DynamicGroupName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="AdminValue">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsAdminValue</DataSetName>
+          <ValueField>AdminValue</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Admin Value</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsAdminValue</DataSetName>
+          <ValueField>AdminValue</ValueField>
+          <LabelField>AdminValueLable</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <MultiValue>true</MultiValue>
+    </ReportParameter>
+    <ReportParameter Name="SubDynamicGrp">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsDynamicGrpSUB</DataSetName>
+          <ValueField>DynamicGroupValue</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Sub Dynamic Grp</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsDynamicGrpSUB</DataSetName>
+          <ValueField>DynamicGroupValue</ValueField>
+          <LabelField>DynamicGroupName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="cost">
+      <DataType>Float</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsReportFormat</DataSetName>
+          <ValueField>AmountIn</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Cost</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>10000000</Value>
+            <Label>Crores</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>100000</Value>
+            <Label>Lacs</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>1000</Value>
+            <Label>Thousands</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>1</Value>
+            <Label>Actuals</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Bankname">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsReportFormat</DataSetName>
+          <ValueField>BankName</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Bankname</Prompt>
+      <Hidden>true</Hidden>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsReportFormat</DataSetName>
+          <ValueField>BankName</ValueField>
+          <LabelField>BankName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Bankadd">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsReportFormat</DataSetName>
+          <ValueField>BankAddress</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Bankadd</Prompt>
+      <Hidden>true</Hidden>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsReportFormat</DataSetName>
+          <ValueField>BankAddress</ValueField>
+          <LabelField>BankAddress</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="ReportPath">
+      <DataType>Boolean</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsReportFormat</DataSetName>
+          <ValueField>ReportPathName</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportPath</Prompt>
+      <Hidden>true</Hidden>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsReportFormat</DataSetName>
+          <ValueField>ReportPathName</ValueField>
+          <LabelField>ReportPathName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="ReportID">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>reportid</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>ReportID</Prompt>
+      <Hidden>true</Hidden>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>reportid</ValueField>
+          <LabelField>reportid</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Version">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>versionno</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Version</Prompt>
+      <Hidden>true</Hidden>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>versionno</ValueField>
+          <LabelField>versionno</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Recordstatus">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>0</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Recordstatus</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="Tier">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsReportFormat</DataSetName>
+          <ValueField>Tier</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Tier</Prompt>
+      <Hidden>true</Hidden>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsReportFormat</DataSetName>
+          <ValueField>Tier</ValueField>
+          <LabelField>Tier</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Range">
+      <DataType>String</DataType>
+      <Prompt>Case Filed Date Range</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DsRange</DataSetName>
+          <ValueField>Value</ValueField>
+          <LabelField>Label</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Amount">
+      <DataType>String</DataType>
+      <Prompt>Select Amount</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>0</Value>
+            <Label>&lt;ALL&gt;</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>1</Value>
+            <Label>SuitAmount upto 50lacs</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>2</Value>
+            <Label>SuitAmount between 50lacs and 1crore</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>3</Value>
+            <Label>SuitAmount between 1crore and 5crores</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>4</Value>
+            <Label>SuitAmount between 5crores and 10crores</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>5</Value>
+            <Label>SuitAmount between 10crores and 25crores</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>6</Value>
+            <Label>SuitAmount between 25crores and 50crores</Label>
+          </ParameterValue>
+          <ParameterValue>
+            <Value>7</Value>
+            <Label>SuitAmount more than 50crores</Label>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <Language>en-US</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportServerUrl>http://server2015:1111/ReportServer</rd:ReportServerUrl>
+  <rd:ReportID>922e81d8-0714-48f8-bd4a-b6c7a471fcba</rd:ReportID>
+</Report>

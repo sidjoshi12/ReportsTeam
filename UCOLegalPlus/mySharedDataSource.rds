@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="mySharedDataSource">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=DBSERVER2\DBSERVER2;Initial Catalog=UCO_LEGAL_PLUS</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>1d804b86-ef73-49cc-aa5a-bfcf2e1b0348</DataSourceID>
+</RptDataSource>

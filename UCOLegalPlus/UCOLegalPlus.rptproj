@@ -10,56 +10,8 @@
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>BaselIIMS.rdl</Name>
-      <FullPath>BaselIIMS.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Grouping.rdl</Name>
-      <FullPath>Grouping.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ImageControl.rdl</Name>
-      <FullPath>ImageControl.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ListControl.rdl</Name>
-      <FullPath>ListControl.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>ListControl1.rdl</Name>
-      <FullPath>ListControl1.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>MatrixReport.rdl</Name>
-      <FullPath>MatrixReport.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Report1.rdl</Name>
-      <FullPath>Report1.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Report2.rdl</Name>
-      <FullPath>Report2.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>SubReportChild.rdl</Name>
-      <FullPath>SubReportChild.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>SubReportMain.rdl</Name>
-      <FullPath>SubReportMain.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>TableReport.rdl</Name>
-      <FullPath>TableReport.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>DataSetTest.rdl</Name>
-      <FullPath>DataSetTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</Name>
-      <FullPath>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</FullPath>
+      <Name>Legal_Plus-16B-Summary Of DRT Cases.rdl</Name>
+      <FullPath>Legal_Plus-16B-Summary Of DRT Cases.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -69,12 +21,9 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
-        <TargetServerURL>http://d2k62/ReportServer_SQLEXPRESS</TargetServerURL>
-        <TargetFolder>TestProject1</TargetFolder>
-        <TargetDataSourceFolder>DS_TestProject1</TargetDataSourceFolder>
-        <OverwriteDataSources>true</OverwriteDataSources>
+        <TargetFolder>UCOLegalPlus</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
-        <OverwriteDatasets>true</OverwriteDatasets>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
       </Options>
     </Configuration>
@@ -84,7 +33,7 @@
       <Options>
         <OutputPath>bin\DebugLocal</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
-        <TargetFolder>TestProject1</TargetFolder>
+        <TargetFolder>UCOLegalPlus</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
@@ -96,7 +45,7 @@
       <Options>
         <OutputPath>bin\Release</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
-        <TargetFolder>TestProject1</TargetFolder>
+        <TargetFolder>UCOLegalPlus</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>

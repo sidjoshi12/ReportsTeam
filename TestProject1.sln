@@ -5,7 +5,9 @@ Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "TestProject1", "TestProject
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{E3A33659-1E81-4CD2-91CB-35BF9D92B931}"
 EndProject
-Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ServerReports", "ServerReports\ServerReports.rptproj", "{6ECEDCE6-3354-4419-8A1F-A5B13464C71F}"
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DenaReports", "DenaReports\DenaReports.rptproj", "{FAA0A800-C748-4CD2-810A-F60F0B744991}"
+EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "UCOLegalPlus", "UCOLegalPlus\UCOLegalPlus.rptproj", "{48C8A862-14A8-460D-8407-B0112781789D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,14 +31,22 @@ Global
 		{E3A33659-1E81-4CD2-91CB-35BF9D92B931}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
 		{E3A33659-1E81-4CD2-91CB-35BF9D92B931}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3A33659-1E81-4CD2-91CB-35BF9D92B931}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6ECEDCE6-3354-4419-8A1F-A5B13464C71F}.Debug|Any CPU.ActiveCfg = Debug
-		{6ECEDCE6-3354-4419-8A1F-A5B13464C71F}.Debug|Any CPU.Build.0 = Debug
-		{6ECEDCE6-3354-4419-8A1F-A5B13464C71F}.Debug|Any CPU.Deploy.0 = Debug
-		{6ECEDCE6-3354-4419-8A1F-A5B13464C71F}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
-		{6ECEDCE6-3354-4419-8A1F-A5B13464C71F}.DebugLocal|Any CPU.Build.0 = DebugLocal
-		{6ECEDCE6-3354-4419-8A1F-A5B13464C71F}.Release|Any CPU.ActiveCfg = Release
-		{6ECEDCE6-3354-4419-8A1F-A5B13464C71F}.Release|Any CPU.Build.0 = Release
-		{6ECEDCE6-3354-4419-8A1F-A5B13464C71F}.Release|Any CPU.Deploy.0 = Release
+		{FAA0A800-C748-4CD2-810A-F60F0B744991}.Debug|Any CPU.ActiveCfg = Debug
+		{FAA0A800-C748-4CD2-810A-F60F0B744991}.Debug|Any CPU.Build.0 = Debug
+		{FAA0A800-C748-4CD2-810A-F60F0B744991}.Debug|Any CPU.Deploy.0 = Debug
+		{FAA0A800-C748-4CD2-810A-F60F0B744991}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{FAA0A800-C748-4CD2-810A-F60F0B744991}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{FAA0A800-C748-4CD2-810A-F60F0B744991}.Release|Any CPU.ActiveCfg = Release
+		{FAA0A800-C748-4CD2-810A-F60F0B744991}.Release|Any CPU.Build.0 = Release
+		{FAA0A800-C748-4CD2-810A-F60F0B744991}.Release|Any CPU.Deploy.0 = Release
+		{48C8A862-14A8-460D-8407-B0112781789D}.Debug|Any CPU.ActiveCfg = Debug
+		{48C8A862-14A8-460D-8407-B0112781789D}.Debug|Any CPU.Build.0 = Debug
+		{48C8A862-14A8-460D-8407-B0112781789D}.Debug|Any CPU.Deploy.0 = Debug
+		{48C8A862-14A8-460D-8407-B0112781789D}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{48C8A862-14A8-460D-8407-B0112781789D}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{48C8A862-14A8-460D-8407-B0112781789D}.Release|Any CPU.ActiveCfg = Release
+		{48C8A862-14A8-460D-8407-B0112781789D}.Release|Any CPU.Build.0 = Release
+		{48C8A862-14A8-460D-8407-B0112781789D}.Release|Any CPU.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
