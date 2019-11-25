@@ -504,6 +504,460 @@ and AdvAcBasicDetail.BranchCode=@BranchCode</CommandText>
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="dsReportFormat">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysReportFormat</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="SrNo">
+          <DataField>SrNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BankName">
+          <DataField>BankName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameFontSize">
+          <DataField>BankNameFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameFontFamily">
+          <DataField>BankNameFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameFontStyle">
+          <DataField>BankNameFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameFontWeight">
+          <DataField>BankNameFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameColour">
+          <DataField>BankNameColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddress">
+          <DataField>BankAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontSize">
+          <DataField>BankAddFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontFamilly">
+          <DataField>BankAddFontFamilly</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontStyle">
+          <DataField>BankAddFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontWeight">
+          <DataField>BankAddFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddFontColour">
+          <DataField>BankAddFontColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontSize">
+          <DataField>ReportNameFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontFamilly">
+          <DataField>ReportNameFontFamilly</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontStyle">
+          <DataField>ReportNameFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontWeight">
+          <DataField>ReportNameFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontColour">
+          <DataField>ReportNameFontColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontSize">
+          <DataField>HeadFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontFamily">
+          <DataField>HeadFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontStyle">
+          <DataField>HeadFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontWeight">
+          <DataField>HeadFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadColour">
+          <DataField>HeadColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadBGColour">
+          <DataField>HeadBGColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontSize">
+          <DataField>BodyFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontFamily">
+          <DataField>BodyFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontStyle">
+          <DataField>BodyFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontWeight">
+          <DataField>BodyFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyColour">
+          <DataField>BodyColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyBGcolour">
+          <DataField>BodyBGcolour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantTotalFontSize">
+          <DataField>GrantTotalFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantFontFamily">
+          <DataField>GrantFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantFontStyle">
+          <DataField>GrantFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantFontWeight">
+          <DataField>GrantFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantColour">
+          <DataField>GrantColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="GrantBGcolour">
+          <DataField>GrantBGcolour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tier">
+          <DataField>Tier</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="BranchLbl">
+          <DataField>BranchLbl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegionLbl">
+          <DataField>RegionLbl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ZoneLbl">
+          <DataField>ZoneLbl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankLbl">
+          <DataField>BankLbl</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AmountIn">
+          <DataField>AmountIn</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ReportPathName">
+          <DataField>ReportPathName</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="HindiFont">
+          <DataField>HindiFont</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HindiFontFamily">
+          <DataField>HindiFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HindiFontStyle">
+          <DataField>HindiFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HindiFontWeight">
+          <DataField>HindiFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BranchTotal">
+          <DataField>BranchTotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegionTotal">
+          <DataField>RegionTotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ZoneTotal">
+          <DataField>ZoneTotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankTotal">
+          <DataField>BankTotal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerID">
+          <DataField>CustomerID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerName">
+          <DataField>CustomerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="D2KName">
+          <DataField>D2KName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FooterFontFamily">
+          <DataField>FooterFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FooterFontSize">
+          <DataField>FooterFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FooterFontStyle">
+          <DataField>FooterFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FooterFontWeight">
+          <DataField>FooterFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeaderDetailFontFamily">
+          <DataField>HeaderDetailFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeaderDetailFontSize">
+          <DataField>HeaderDetailFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeaderDetailFontStyle">
+          <DataField>HeaderDetailFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeaderDetailFontWeight">
+          <DataField>HeaderDetailFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FormatG">
+          <DataField>FormatG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FormatF">
+          <DataField>FormatF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ImagePath">
+          <DataField>ImagePath</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankNameHindi">
+          <DataField>BankNameHindi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAddressHindi">
+          <DataField>BankAddressHindi</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BankAlt_Key">
+          <DataField>BankAlt_Key</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="RBIBankCode">
+          <DataField>RBIBankCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsDynamicGrpSUB">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLoginID">
+            <Value>=Parameters!UserLoginID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocation">
+            <Value>=Parameters!UserLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocationCode">
+            <Value>=Parameters!UserLocationCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MisLocation">
+            <Value>=Parameters!MisLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@ReportType">
+            <Value>=Parameters!ReportType.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@CustFacility">
+            <Value>=Parameters!CustFacility.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysSubDynamicGrp</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DynamicGroupAlt_Key">
+          <DataField>DynamicGroupAlt_Key</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupName">
+          <DataField>DynamicGroupName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupValue">
+          <DataField>DynamicGroupValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupLabel">
+          <DataField>DynamicGroupLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsCustFacilityTYPE">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@ReportType">
+            <Value>=Parameters!ReportType.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysReportoutputType</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="CustFacilityLabel">
+          <DataField>CustFacilityLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustFacilityValue">
+          <DataField>CustFacilityValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsDynamicGrp_Lbl">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@SubDynamicGrp">
+            <Value>=Parameters!SubDynamicGrp.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysDynamicGrp_Lbl</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DynamicGroupLabel1">
+          <DataField>DynamicGroupLabel1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupLabel">
+          <DataField>DynamicGroupLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsDynamicGrpSUB_Lbl">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@SubDynamicGrp">
+            <Value>=Parameters!SubDynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@CustFacility">
+            <Value>=Parameters!CustFacility.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysSubDynamicGrp_Lbl</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="SubDynamicGroupLabel">
+          <DataField>SubDynamicGroupLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SubDynamicGroupLabelforSummary">
+          <DataField>SubDynamicGroupLabelforSummary</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsAmount">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@ReportID">
+            <Value>=Parameters!ReportID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysCost</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Value">
+          <DataField>Value</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Caption">
+          <DataField>Caption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsMenu">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@ReportName">
+            <Value>=Parameters!ReportName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@TimeKey">
+            <Value>=Parameters!TimeKey.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SysRpt-MenuPath</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Path1">
+          <DataField>Path1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportParameters>
     <ReportParameter Name="UserName">
@@ -555,12 +1009,14 @@ and AdvAcBasicDetail.BranchCode=@BranchCode</CommandText>
     </ReportParameter>
     <ReportParameter Name="MisLocation">
       <DataType>String</DataType>
+      <Nullable>true</Nullable>
       <DefaultValue>
         <DataSetReference>
           <DataSetName>dsAD</DataSetName>
           <ValueField>Department</ValueField>
         </DataSetReference>
       </DefaultValue>
+      <AllowBlank>true</AllowBlank>
       <Prompt>Mis Location</Prompt>
       <Hidden>true</Hidden>
       <ValidValues>
@@ -619,6 +1075,78 @@ and AdvAcBasicDetail.BranchCode=@BranchCode</CommandText>
             <Value>=Globals!ReportName</Value>
           </ParameterValue>
         </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="Tier">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>3</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Tire</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+    <ReportParameter Name="ReportType">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>ReportTypeValue</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Report Type</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>ReportTypeValue</ValueField>
+          <LabelField>ReportTypeLabel</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="CustFacility">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsCustFacilityTYPE</DataSetName>
+          <ValueField>CustFacilityValue</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Cust Facility</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsCustFacilityTYPE</DataSetName>
+          <ValueField>CustFacilityValue</ValueField>
+          <LabelField>CustFacilityLabel</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="SubDynamicGrp">
+      <DataType>String</DataType>
+      <Prompt>Sub Dynamic Grp</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsDynamicGrpSUB</DataSetName>
+          <ValueField>DynamicGroupValue</ValueField>
+          <LabelField>DynamicGroupName</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="ReportID">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>reportid</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Report ID</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsVersion</DataSetName>
+          <ValueField>reportid</ValueField>
+          <LabelField>reportid</LabelField>
+        </DataSetReference>
       </ValidValues>
     </ReportParameter>
   </ReportParameters>

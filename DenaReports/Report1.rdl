@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <Height>2in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>1in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <DataSourceReference>mySharedDataSource</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>68cfc555-d854-4997-85f1-5aa0e496825e</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsDynamicGrp">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLoginID">
+            <Value>=Parameters!UserLoginID.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocation">
+            <Value>=Parameters!UserLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@UserLocationCode">
+            <Value>=Parameters!UserLocationCode.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MisLocation">
+            <Value>=Parameters!MisLocation.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysDynamicGrp</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="DynamicGroup_Key">
+          <DataField>DynamicGroup_Key</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupName">
+          <DataField>DynamicGroupName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupValue">
+          <DataField>DynamicGroupValue</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DynamicGroupLabel">
+          <DataField>DynamicGroupLabel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsAD">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysAD</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Department">
+          <DataField>Department</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="UserName">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>=Right(User!UserID, Len(User!UserID) - InStr(User!UserID, "\"))</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>User Name</Prompt>
+      <ValidValues>
+        <ParameterValues>
+          <ParameterValue>
+            <Value>=Right(User!UserID, Len(User!UserID) - InStr(User!UserID, "\"))</Value>
+          </ParameterValue>
+        </ParameterValues>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="UserLoginID">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="D2K"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>User Login ID</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UserLocation">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="D2K"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>User Location</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UserLocationCode">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>="D2K"</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>User Location Code</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="MisLocation">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsAD</DataSetName>
+          <ValueField>Department</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>Mis Location</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsAD</DataSetName>
+          <ValueField>Department</ValueField>
+          <LabelField>Department</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="DynamicGrp">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>dsDynamicGrp</DataSetName>
+          <ValueField>DynamicGroupValue</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Dynamic Grp</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>dsDynamicGrp</DataSetName>
+          <ValueField>DynamicGroupValue</ValueField>
+          <LabelField>DynamicGroupLabel</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+  </ReportParameters>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>f313c63b-4a8c-48a0-8d5c-47808e1ce738</rd:ReportID>
+</Report>

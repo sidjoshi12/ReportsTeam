@@ -1,5 +1,5 @@
 
-
+select * from SysReportDirectory where ReportID in('Rpt-10536','Rpt-7777')order by SeqNo
 
 --insert SysReportDirectory
 --(SeqNo,ReportID,ReportType,ReportRdlName,ReportUrl,VersionNo,Remark,DeploymentDt,Frequency_Period,Deploy,Deploy_Prod,ReportMenuId,ReportRdlFullName,ReportFieldDisplay,DeptReportNo,RBI_ReportNo,CRisMacReportNo,ReportFrequency_Key,ReportingDay,ReportOwnerMain,ReportOwnerAlternate,SubmissionType,FirstReportGenerationDate,NextEntityCreationDate,DaysToGenerate,AdvReminderInDays,AdvReminderRecipient,AdvReminderCopyTo,AdvReminderSubject,AdvReminderText,Reminder1_InDays,Reminder1_Recipient,Reminder1_CopyTo,Reminder1_Subject,Reminder1_Text,Reminder2_InDays,Reminder2_Recipient,Reminder2_CopyTo,Reminder2_Subject,Reminder2_Text,RBI_Recipient,RBI_CopyTo,RBI_Subject,RBI_Text,Monitoring_Required,Ch_RptFrequency_EffectiveDate,EffectiveFromTimeKey,EffectiveToTimeKey,CreatedBy,DateCreated,ModifyBy,DateModified,ApprovedBy,DateApproved,ExportReportId,ExportReportName,DeptGroupId,PreMoc)
@@ -9,3 +9,11 @@ select * from SysReportDirectory where SeqNo=7777
 exec [Rpt-SysReportVersion] 
 @ReportName='Rpt-7777-AcWise'
 ,@TimeKey=4655
+
+
+select * from SysReportDirectory where SeqNo=7777
+--update SysReportDirectory set reportType=2 where SeqNo=7777
+
+select distinct reporttype from SysReportDirectory
+
+select * from SysReportDirectory where reporttype=2

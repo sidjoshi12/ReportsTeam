@@ -10,12 +10,8 @@
   <DataSets />
   <Reports>
     <ProjectItem>
-      <Name>AcWise.rdl</Name>
-      <FullPath>AcWise.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</Name>
-      <FullPath>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</FullPath>
+      <Name>Rpt-7777-AcWise.rdl</Name>
+      <FullPath>Rpt-7777-AcWise.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Rpt-0001-Dena Snap Shot (Detail).rdl</Name>
@@ -25,6 +21,14 @@
       <Name>Rpt-10432-Interest Range Wise Asset Classification of Advances.rdl</Name>
       <FullPath>Rpt-10432-Interest Range Wise Asset Classification of Advances.rdl</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</Name>
+      <FullPath>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report1.rdl</Name>
+      <FullPath>Report1.rdl</FullPath>
+    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
@@ -33,9 +37,12 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetServerURL>http://d2k62/ReportServer_SQLEXPRESS</TargetServerURL>
         <TargetFolder>DenaReports</TargetFolder>
-        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDataSourceFolder>DS_DenaReports</TargetDataSourceFolder>
+        <OverwriteDataSources>true</OverwriteDataSources>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <OverwriteDatasets>true</OverwriteDatasets>
         <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
       </Options>
     </Configuration>

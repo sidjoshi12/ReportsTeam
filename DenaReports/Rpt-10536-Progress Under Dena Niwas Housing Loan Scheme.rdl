@@ -779,6 +779,24 @@
         </Field>
       </Fields>
     </DataSet>
+    <DataSet Name="daSD">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-SysAD</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Department">
+          <DataField>Department</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
