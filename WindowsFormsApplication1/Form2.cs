@@ -33,7 +33,11 @@ namespace WindowsFormsApplication1
             localReport.DataSources.Add(myReportDS);
             
             // Refresh the report  
-            reportViewer1.RefreshReport();  
+            reportViewer1.RefreshReport();
+
+            int DeleteTopNRows = 1;
+            string[] lines = System.IO.File.ReadAllLines("");
+            lines = lines.Skip(DeleteTopNRows).ToArray();
         }
     }
 }

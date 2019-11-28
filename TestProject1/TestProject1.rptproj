@@ -14,6 +14,10 @@
       <FullPath>BaselIIMS.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>DataSetTest.rdl</Name>
+      <FullPath>DataSetTest.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Grouping.rdl</Name>
       <FullPath>Grouping.rdl</FullPath>
     </ProjectItem>
@@ -42,6 +46,10 @@
       <FullPath>Report2.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</Name>
+      <FullPath>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>SubReportChild.rdl</Name>
       <FullPath>SubReportChild.rdl</FullPath>
     </ProjectItem>
@@ -54,12 +62,8 @@
       <FullPath>TableReport.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>DataSetTest.rdl</Name>
-      <FullPath>DataSetTest.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</Name>
-      <FullPath>Rpt-10536-Progress Under Dena Niwas Housing Loan Scheme.rdl</FullPath>
+      <Name>Double.rdl</Name>
+      <FullPath>Double.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

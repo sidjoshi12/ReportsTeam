@@ -4,7 +4,7 @@
   <DataSources>
     <DataSource Name="AdvData">
       <DataSourceReference>mySharedDataSource</DataSourceReference>
-      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:SecurityType>None</rd:SecurityType>
       <rd:DataSourceID>4c292e85-79de-478b-b729-b4b66fabeed1</rd:DataSourceID>
     </DataSource>
   </DataSources>
@@ -25,16 +25,8 @@
           <DataField>BankName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="BankAddress">
-          <DataField>BankAddress</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="BankNameFontSize">
           <DataField>BankNameFontSize</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="HeadFontSize">
-          <DataField>HeadFontSize</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="BankNameFontFamily">
@@ -45,56 +37,28 @@
           <DataField>BankNameFontStyle</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="HeadFontFamily">
-          <DataField>HeadFontFamily</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="HeadFontStyle">
-          <DataField>HeadFontStyle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="BankNameFontWeight">
           <DataField>BankNameFontWeight</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="HeadFontWeight">
-          <DataField>HeadFontWeight</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="BankNameColour">
           <DataField>BankNameColour</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="HeadColour">
-          <DataField>HeadColour</DataField>
+        <Field Name="BankAddress">
+          <DataField>BankAddress</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="BankAddFontSize">
           <DataField>BankAddFontSize</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="HeadBGColour">
-          <DataField>HeadBGColour</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BodyFontSize">
-          <DataField>BodyFontSize</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="BankAddFontFamilly">
           <DataField>BankAddFontFamilly</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="BodyFontFamily">
-          <DataField>BodyFontFamily</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="BankAddFontStyle">
           <DataField>BankAddFontStyle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BodyFontStyle">
-          <DataField>BodyFontStyle</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="BankAddFontWeight">
@@ -105,20 +69,8 @@
           <DataField>BankAddFontColour</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="BodyFontWeight">
-          <DataField>BodyFontWeight</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="ReportNameFontSize">
           <DataField>ReportNameFontSize</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BodyColour">
-          <DataField>BodyColour</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BodyBGcolour">
-          <DataField>BodyBGcolour</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="ReportNameFontFamilly">
@@ -129,6 +81,62 @@
           <DataField>ReportNameFontStyle</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="ReportNameFontWeight">
+          <DataField>ReportNameFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReportNameFontColour">
+          <DataField>ReportNameFontColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontSize">
+          <DataField>HeadFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontFamily">
+          <DataField>HeadFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontStyle">
+          <DataField>HeadFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadFontWeight">
+          <DataField>HeadFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadColour">
+          <DataField>HeadColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeadBGColour">
+          <DataField>HeadBGColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontSize">
+          <DataField>BodyFontSize</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontFamily">
+          <DataField>BodyFontFamily</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontStyle">
+          <DataField>BodyFontStyle</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyFontWeight">
+          <DataField>BodyFontWeight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyColour">
+          <DataField>BodyColour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BodyBGcolour">
+          <DataField>BodyBGcolour</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="GrantTotalFontSize">
           <DataField>GrantTotalFontSize</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -137,16 +145,8 @@
           <DataField>GrantFontFamily</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ReportNameFontWeight">
-          <DataField>ReportNameFontWeight</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="GrantFontStyle">
           <DataField>GrantFontStyle</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ReportNameFontColour">
-          <DataField>ReportNameFontColour</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="GrantFontWeight">
@@ -161,17 +161,9 @@
           <DataField>GrantBGcolour</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="FormatG">
-          <DataField>FormatG</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="FormatF">
-          <DataField>FormatF</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ImagePath">
-          <DataField>ImagePath</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="Tier">
+          <DataField>Tier</DataField>
+          <rd:TypeName>System.Int16</rd:TypeName>
         </Field>
         <Field Name="BranchLbl">
           <DataField>BranchLbl</DataField>
@@ -196,10 +188,6 @@
         <Field Name="ReportPathName">
           <DataField>ReportPathName</DataField>
           <rd:TypeName>System.Boolean</rd:TypeName>
-        </Field>
-        <Field Name="Tier">
-          <DataField>Tier</DataField>
-          <rd:TypeName>System.Int16</rd:TypeName>
         </Field>
         <Field Name="HindiFont">
           <DataField>HindiFont</DataField>
@@ -273,6 +261,18 @@
           <DataField>HeaderDetailFontWeight</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="FormatG">
+          <DataField>FormatG</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FormatF">
+          <DataField>FormatF</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ImagePath">
+          <DataField>ImagePath</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="BankCode">
           <DataField>BankCode</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -299,11 +299,107 @@
         </Field>
       </Fields>
     </DataSet>
-    <DataSet Name="dsAD">
+    <DataSet Name="dsLegal70">
       <Query>
         <DataSourceName>AdvData</DataSourceName>
         <QueryParameters>
           <QueryParameter Name="@UserName">
+            <Value>=Parameters!UserName.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@AdminValue">
+            <Value>=Parameters!AdminValue.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DynamicGrp">
+            <Value>=Parameters!DynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@cost">
+            <Value>=Parameters!cost.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@SubDynamicGrp">
+            <Value>=Parameters!SubDynamicGrp.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@MisLocation">
+            <Value>=Parameters!MisLocation.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@DtEnter">
+            <Value>=Parameters!DtEnter.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@From">
+            <Value>=Parameters!From.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@to">
+            <Value>=Parameters!to.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Recordstatus">
+            <Value>=Parameters!Recordstatus.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Tier">
+            <Value>=Parameters!Tier.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@Filter">
+            <Value>=Parameters!Filter.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>Rpt-Legal-Plus-170</CommandText>
+        <rd:UseGenericDesigner>true</rd:UseGenericDesigner>
+      </Query>
+      <Fields>
+        <Field Name="DynamicGrp">
+          <DataField>DynamicGrp</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SubDynamicGrp">
+          <DataField>SubDynamicGrp</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ZoneName">
+          <DataField>ZoneName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RegionName">
+          <DataField>RegionName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BranchName">
+          <DataField>BranchName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerId">
+          <DataField>CustomerId</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerName">
+          <DataField>CustomerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StaffAccExamined">
+          <DataField>StaffAccExamined</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Balance">
+          <DataField>Balance</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="StaffLapses">
+          <DataField>StaffLapses</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustType">
+          <DataField>CustType</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StaffActionInitiated">
+          <DataField>StaffActionInitiated</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="dsAD">
+      <Query>
+        <DataSourceName>AdvData</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@username">
             <Value>=Parameters!UserName.Value</Value>
           </QueryParameter>
         </QueryParameters>
@@ -537,157 +633,53 @@
         </Field>
       </Fields>
     </DataSet>
-    <DataSet Name="DsRange">
-      <Query>
-        <DataSourceName>AdvData</DataSourceName>
-        <CommandText>SELECT '&lt;ALL&gt;' AS Label,0 As Value
-UNION ALL
-SELECT 'Cases filed upto 1 Year',1
-UNION ALL
-SELECT 'Above 1 year up to 2 years',2
-UNION ALL
-SELECT 'Above 2 years  up to 3 years',3
-UNION ALL
-SELECT 'Above 3 years  up to 5 years',4
-UNION ALL
-SELECT 'Above 5 years up to 10 years',5
-UNION ALL
-SELECT 'Above 10 years',6</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="Label">
-          <DataField>Label</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Value">
-          <DataField>Value</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
-    <DataSet Name="Legal16B">
-      <Query>
-        <DataSourceName>AdvData</DataSourceName>
-        <QueryParameters>
-          <QueryParameter Name="@UserName">
-            <Value>=Parameters!UserName.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@AdminValue">
-            <Value>=Parameters!AdminValue.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@DynamicGrp">
-            <Value>=Parameters!DynamicGrp.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@SubDynamicGrp">
-            <Value>=Parameters!SubDynamicGrp.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@MisLocation">
-            <Value>=Parameters!MisLocation.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@cost">
-            <Value>=Parameters!cost.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@Range">
-            <Value>=Parameters!Range.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@DtEnter">
-            <Value>=Parameters!DtEnter.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@From">
-            <Value>=Parameters!From.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@to">
-            <Value>=Parameters!to.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@Recordstatus">
-            <Value>=Parameters!Recordstatus.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@Tier">
-            <Value>=Parameters!Tier.Value</Value>
-          </QueryParameter>
-          <QueryParameter Name="@Amount">
-            <Value>=Parameters!Amount.Value</Value>
-          </QueryParameter>
-        </QueryParameters>
-        <CommandType>StoredProcedure</CommandType>
-        <CommandText>[Rpt-Legal-Plus-16B]</CommandText>
-      </Query>
-      <Fields>
-        <Field Name="DynamicGrp">
-          <DataField>DynamicGrp</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="SubDynamicGrp">
-          <DataField>SubDynamicGrp</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ZoneName">
-          <DataField>ZoneName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RegionName">
-          <DataField>RegionName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="BranchName">
-          <DataField>BranchName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PendingCases">
-          <DataField>PendingCases</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="PendingAmt">
-          <DataField>PendingAmt</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-        <Field Name="DecreeCases">
-          <DataField>DecreeCases</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="DecreeAmt">
-          <DataField>DecreeAmt</DataField>
-          <rd:TypeName>System.Double</rd:TypeName>
-        </Field>
-      </Fields>
-    </DataSet>
   </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
         <ReportItems>
-          <Tablix Name="Tablix2">
+          <Tablix Name="table4">
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>2.03393in</Width>
+                  <Width>0.28604in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.57784in</Width>
+                  <Width>1.96484in</Width>
                 </TablixColumn>
                 <TablixColumn>
-                  <Width>2.4913in</Width>
+                  <Width>1.01042in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.44435in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.57292in</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>1.83947in</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
                 <TablixRow>
-                  <Height>0.35209in</Height>
+                  <Height>0.35417in</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="textbox3">
+                        <Textbox Name="textbox15">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Constant">Status</Value>
+                                  <Value>Sr. No.</Value>
                                   <Style>
                                     <FontStyle>=First(Fields!HeadFontStyle.Value, "dsReportFormat")</FontStyle>
                                     <FontFamily>=First(Fields!HeadFontFamily.Value, "dsReportFormat")</FontFamily>
                                     <FontSize>=First(Fields!HeadFontSize.Value, "dsReportFormat")</FontSize>
                                     <FontWeight>=First(Fields!HeadFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>0;</Format>
                                     <Color>=First(Fields!HeadColour.Value, "dsReportFormat")</Color>
                                   </Style>
                                 </TextRun>
@@ -697,8 +689,7 @@ SELECT 'Above 10 years',6</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>textbox2</rd:DefaultName>
-                          <ZIndex>203</ZIndex>
+                          <ZIndex>71</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -708,27 +699,27 @@ SELECT 'Above 10 years',6</CommandText>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>1pt</PaddingBottom>
+                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="textbox39">
+                        <Textbox Name="textbox27">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Constant">Count</Value>
+                                  <Value> Name Of Borrower</Value>
                                   <Style>
                                     <FontStyle>=First(Fields!HeadFontStyle.Value, "dsReportFormat")</FontStyle>
                                     <FontFamily>=First(Fields!HeadFontFamily.Value, "dsReportFormat")</FontFamily>
                                     <FontSize>=First(Fields!HeadFontSize.Value, "dsReportFormat")</FontSize>
                                     <FontWeight>=First(Fields!HeadFontWeight.Value, "dsReportFormat")</FontWeight>
-                                    <Format>g</Format>
+                                    <Format>0;</Format>
                                     <Color>=First(Fields!HeadColour.Value, "dsReportFormat")</Color>
                                   </Style>
                                 </TextRun>
@@ -738,58 +729,38 @@ SELECT 'Above 10 years',6</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>textbox37</rd:DefaultName>
-                          <ZIndex>202</ZIndex>
+                          <rd:DefaultName>textbox26</rd:DefaultName>
+                          <ZIndex>70</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
                             <BackgroundColor>=First(Fields!HeadBGColour.Value, "dsReportFormat")</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>1pt</PaddingBottom>
+                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="textbox45">
+                        <Textbox Name="Textbox16">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Constant">Amount Claimed*</Value>
+                                  <Value>O/s. Amount</Value>
                                   <Style>
                                     <FontStyle>=First(Fields!HeadFontStyle.Value, "dsReportFormat")</FontStyle>
                                     <FontFamily>=First(Fields!HeadFontFamily.Value, "dsReportFormat")</FontFamily>
                                     <FontSize>=First(Fields!HeadFontSize.Value, "dsReportFormat")</FontSize>
                                     <FontWeight>=First(Fields!HeadFontWeight.Value, "dsReportFormat")</FontWeight>
-                                    <Format>f</Format>
+                                    <Format>f2</Format>
                                     <Color>=First(Fields!HeadColour.Value, "dsReportFormat")</Color>
                                   </Style>
                                 </TextRun>
@@ -799,38 +770,134 @@ SELECT 'Above 10 years',6</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>textbox43</rd:DefaultName>
-                          <ZIndex>201</ZIndex>
+                          <rd:DefaultName>Textbox16</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <BottomBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </BottomBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <RightBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </RightBorder>
                             <BackgroundColor>=First(Fields!HeadBGColour.Value, "dsReportFormat")</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>1pt</PaddingBottom>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox11">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Whether Staff Accountability Examined (Y/N)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!HeadFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!HeadFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!HeadFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!HeadFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!HeadColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox11</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!HeadBGColour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox22">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Constant">If Yes,  whether lapses found (Y/N)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!HeadFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!HeadFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!HeadFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!HeadFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!HeadColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox22</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!HeadBGColour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox30">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value EvaluationMode="Constant">If lapses found, action initiated against erring officials (Y/N)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!HeadFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!HeadFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!HeadFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!HeadFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!HeadColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox30</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!HeadBGColour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
                       </CellContents>
@@ -842,7 +909,7 @@ SELECT 'Above 10 years',6</CommandText>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox171">
+                        <Textbox Name="textbox5">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
@@ -855,6 +922,7 @@ SELECT 'Above 10 years',6</CommandText>
                                     <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
                                     <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
                                     <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>0;</Format>
                                     <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
                                   </Style>
                                 </TextRun>
@@ -864,7 +932,7 @@ SELECT 'Above 10 years',6</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>Textbox170</rd:DefaultName>
+                          <ZIndex>57</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -877,9 +945,12 @@ SELECT 'Above 10 years',6</CommandText>
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <ColSpan>3</ColSpan>
+                        <ColSpan>6</ColSpan>
                       </CellContents>
                     </TablixCell>
+                    <TablixCell />
+                    <TablixCell />
+                    <TablixCell />
                     <TablixCell />
                     <TablixCell />
                   </TablixCells>
@@ -889,59 +960,20 @@ SELECT 'Above 10 years',6</CommandText>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox50">
+                        <Textbox Name="textbox7">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Constant">Pending</Value>
+                                  <Value>=ROWNUMBER(NOTHING)</Value>
                                   <Style>
                                     <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
                                     <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
                                     <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
                                     <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
-                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>Textbox27</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="below6months3">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Sum(Fields!PendingCases.Value)</Value>
-                                  <Style>
-                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
-                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
-                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
-                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
-                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
+                                    <Format>0;</Format>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -950,12 +982,11 @@ SELECT 'Above 10 years',6</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>below6months</rd:DefaultName>
+                          <ZIndex>13</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -967,21 +998,59 @@ SELECT 'Above 10 years',6</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="below6monthsamount3">
+                        <Textbox Name="CustomerID3">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!PendingAmt.Value)</Value>
+                                  <Value>=Fields!CustomerName.Value</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>0;</Format>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>CustomerID</rd:DefaultName>
+                          <ZIndex>12</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Balance">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Balance.Value</Value>
                                   <Style>
                                     <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
                                     <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
                                     <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
                                     <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
                                     <Format>f2</Format>
-                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -990,12 +1059,122 @@ SELECT 'Above 10 years',6</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>below6monthsamount</rd:DefaultName>
+                          <rd:DefaultName>Balance</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="StaffAccExamined">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!StaffAccExamined.Value</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>StaffAccExamined</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="StaffLapses">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!StaffLapses.Value</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>StaffLapses</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="StaffActionInitiated">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!StaffActionInitiated.Value</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>StaffActionInitiated</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
                             <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
@@ -1012,25 +1191,834 @@ SELECT 'Above 10 years',6</CommandText>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="Textbox51">
+                        <Textbox Name="Textbox19">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value EvaluationMode="Constant">RC</Value>
+                                  <Value>=First(Fields!BranchLbl.Value, "dsReportFormat") &amp; " " &amp; Fields!BranchName.Value &amp; " , " &amp; First(Fields!BranchTotal.Value, "dsReportFormat")</Value>
                                   <Style>
-                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
-                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
-                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
-                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
-                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
-                                <TextAlign>Left</TextAlign>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox19</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Balance1">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Balance.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>f2</Format>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Balance1</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox17">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox17</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox25">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox25</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox34">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox34</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <VerticalAlign>Middle</VerticalAlign>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox163">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!SubDynamicGroupLabel.Value, "dsDynamicGrpSUB_Lbl")  &amp; " : " &amp; Fields!SubDynamicGrp.Value &amp; " , " &amp; REPLACE(First(Fields!SubDynamicGroupLabel.Value, "dsDynamicGrpSUB_Lbl"),":","-TOTAL")</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox163</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Balance2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Balance.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>f2</Format>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Balance2</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox18">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox18</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox26">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox26</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox35">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox35</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </TopBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="textbox59">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!DynamicGroupLabel1.Value, "dsDynamicGrp_Lbl")  &amp; " : " &amp; Fields!DynamicGrp.Value &amp; " , " &amp; 
+REPLACE(First(Fields!DynamicGroupLabel1.Value, "dsDynamicGrp_Lbl"),":","-TOTAL ") &amp; " TOTAL:"</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>0;</Format>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>textbox58</rd:DefaultName>
+                          <ZIndex>43</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Balance3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Balance.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>f2</Format>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Balance3</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox20">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox20</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox28">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox28</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox36">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox36</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.25in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox62">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=First(Fields!BankTotal.Value, "dsReportFormat")</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox62</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <ColSpan>2</ColSpan>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell />
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Balance4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Sum(Fields!Balance.Value)</Value>
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Format>f2</Format>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Balance4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox21">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox21</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox29">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value />
+                                  <Style>
+                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
+                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
+                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
+                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
+                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Right</TextAlign>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
@@ -1039,47 +2027,12 @@ SELECT 'Above 10 years',6</CommandText>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="oneyear3">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Sum(Fields!DecreeCases.Value)</Value>
-                                  <Style>
-                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
-                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
-                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
-                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
-                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>oneyear</rd:DefaultName>
-                          <Style>
-                            <Border>
+                            <LeftBorder>
+                              <Color>Black</Color>
                               <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
+                              <Width>1pt</Width>
+                            </LeftBorder>
+                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1090,59 +2043,14 @@ SELECT 'Above 10 years',6</CommandText>
                     </TablixCell>
                     <TablixCell>
                       <CellContents>
-                        <Textbox Name="oneyearamount3">
+                        <Textbox Name="Textbox37">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Sum(Fields!DecreeAmt.Value)</Value>
-                                  <Style>
-                                    <FontStyle>=First(Fields!BodyFontStyle.Value, "dsReportFormat")</FontStyle>
-                                    <FontFamily>=First(Fields!BodyFontFamily.Value, "dsReportFormat")</FontFamily>
-                                    <FontSize>=First(Fields!BodyFontSize.Value, "dsReportFormat")</FontSize>
-                                    <FontWeight>=First(Fields!BodyFontWeight.Value, "dsReportFormat")</FontWeight>
-                                    <Format>f2</Format>
-                                    <Color>=First(Fields!BodyColour.Value, "dsReportFormat")</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>oneyearamount</rd:DefaultName>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                            </Border>
-                            <BackgroundColor>=First(Fields!BodyBGcolour.Value, "dsReportFormat")</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                  </TablixCells>
-                </TablixRow>
-                <TablixRow>
-                  <Height>0.25in</Height>
-                  <TablixCells>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="textbox91">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value EvaluationMode="Constant">Total</Value>
+                                  <Value />
                                   <Style>
                                     <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
                                     <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
@@ -1157,125 +2065,17 @@ SELECT 'Above 10 years',6</CommandText>
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>textbox85</rd:DefaultName>
-                          <ZIndex>23</ZIndex>
+                          <rd:DefaultName>Textbox37</rd:DefaultName>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
                             </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
                             <LeftBorder>
                               <Color>Black</Color>
                               <Style>Solid</Style>
                               <Width>1pt</Width>
                             </LeftBorder>
                             <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="textbox92">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Sum(Fields!PendingCases.Value)+Sum(Fields!DecreeCases.Value)</Value>
-                                  <Style>
-                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
-                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
-                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
-                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
-                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Center</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>textbox85</rd:DefaultName>
-                          <ZIndex>23</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                      </CellContents>
-                    </TablixCell>
-                    <TablixCell>
-                      <CellContents>
-                        <Textbox Name="textbox93">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Sum(Fields!PendingAmt.Value)+Sum(Fields!DecreeAmt.Value)</Value>
-                                  <Style>
-                                    <FontStyle>=First(Fields!GrantFontStyle.Value, "dsReportFormat")</FontStyle>
-                                    <FontFamily>=First(Fields!GrantFontFamily.Value, "dsReportFormat")</FontFamily>
-                                    <FontSize>=First(Fields!GrantTotalFontSize.Value, "dsReportFormat")</FontSize>
-                                    <FontWeight>=First(Fields!GrantFontWeight.Value, "dsReportFormat")</FontWeight>
-                                    <Format>f2</Format>
-                                    <Color>=First(Fields!GrantColour.Value, "dsReportFormat")</Color>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Right</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>textbox85</rd:DefaultName>
-                          <ZIndex>23</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>Solid</Style>
-                            </Border>
-                            <TopBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </TopBorder>
-                            <LeftBorder>
-                              <Color>Black</Color>
-                              <Style>Solid</Style>
-                              <Width>1pt</Width>
-                            </LeftBorder>
-                            <BackgroundColor>=First(Fields!GrantBGcolour.Value, "dsReportFormat")</BackgroundColor>
-                            <VerticalAlign>Middle</VerticalAlign>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1293,6 +2093,9 @@ SELECT 'Above 10 years',6</CommandText>
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
+                <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -1304,7 +2107,7 @@ SELECT 'Above 10 years',6</CommandText>
                   <KeepTogether>true</KeepTogether>
                 </TablixMember>
                 <TablixMember>
-                  <Group Name="DynamicGrp2">
+                  <Group Name="DynamicGrp">
                     <GroupExpressions>
                       <GroupExpression>=Fields!DynamicGrp.Value</GroupExpression>
                     </GroupExpressions>
@@ -1319,7 +2122,7 @@ SELECT 'Above 10 years',6</CommandText>
                   </SortExpressions>
                   <TablixMembers>
                     <TablixMember>
-                      <Group Name="SubDynamicGrp2">
+                      <Group Name="SubDynamicGrp">
                         <GroupExpressions>
                           <GroupExpression>=Fields!SubDynamicGrp.Value</GroupExpression>
                         </GroupExpressions>
@@ -1334,9 +2137,9 @@ SELECT 'Above 10 years',6</CommandText>
                       </SortExpressions>
                       <TablixMembers>
                         <TablixMember>
-                          <Group Name="BranchName2">
+                          <Group Name="BranchName">
                             <GroupExpressions>
-                              <GroupExpression>=IIF(Parameters!SubDynamicGrp.Value = "BO",Fields!BranchName.Value,Parameters!SubDynamicGrp.Value)</GroupExpression>
+                              <GroupExpression>=Fields!BranchName.Value</GroupExpression>
                             </GroupExpressions>
                             <PageBreak>
                               <BreakLocation>Between</BreakLocation>
@@ -1348,48 +2151,67 @@ SELECT 'Above 10 years',6</CommandText>
                             </SortExpression>
                           </SortExpressions>
                           <TablixMembers>
-                            <TablixMember />
-                            <TablixMember />
-                            <TablixMember />
-                            <TablixMember />
+                            <TablixMember>
+                              <KeepTogether>true</KeepTogether>
+                            </TablixMember>
+                            <TablixMember>
+                              <Group Name="Details">
+                                <DataElementName>Detail</DataElementName>
+                              </Group>
+                              <TablixMembers>
+                                <TablixMember />
+                              </TablixMembers>
+                              <DataElementName>Detail_Collection</DataElementName>
+                              <DataElementOutput>Output</DataElementOutput>
+                              <KeepTogether>true</KeepTogether>
+                            </TablixMember>
+                            <TablixMember>
+                              <KeepWithGroup>Before</KeepWithGroup>
+                            </TablixMember>
                           </TablixMembers>
+                        </TablixMember>
+                        <TablixMember>
+                          <Visibility>
+                            <Hidden>=iif(Parameters!DynamicGrp.Value="BO" and Parameters!SubDynamicGrp.Value="BO",true,false)</Hidden>
+                          </Visibility>
                         </TablixMember>
                       </TablixMembers>
                     </TablixMember>
+                    <TablixMember>
+                      <Visibility>
+                        <Hidden>=iif(Parameters!Tier.Value=3,TRUE,IIF((Parameters!DynamicGrp.Value="RO" AND Parameters!SubDynamicGrp.Value="BO"),TRUE,IIF(Parameters!DynamicGrp.Value="ZO" OR (Parameters!DynamicGrp.Value="BANK" AND Parameters!SubDynamicGrp.Value="BO"),FALSE,TRUE)))</Hidden>
+                      </Visibility>
+                      <KeepTogether>true</KeepTogether>
+                    </TablixMember>
                   </TablixMembers>
                 </TablixMember>
+                <TablixMember />
               </TablixMembers>
             </TablixRowHierarchy>
-            <RepeatRowHeaders>true</RepeatRowHeaders>
-            <FixedRowHeaders>true</FixedRowHeaders>
             <KeepTogether>true</KeepTogether>
-            <DataSetName>Legal16B</DataSetName>
-            <Top>0.12604in</Top>
-            <Left>0.2761in</Left>
-            <Height>1.35209in</Height>
-            <Width>7.10307in</Width>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-            </Style>
+            <DataSetName>dsLegal70</DataSetName>
+            <Top>0.08332in</Top>
+            <Left>0.08366in</Left>
+            <Height>1.85417in</Height>
+            <Width>8.11804in</Width>
+            <Style />
           </Tablix>
         </ReportItems>
-        <Height>1.62396in</Height>
+        <Height>1.93749in</Height>
         <Style />
       </Body>
-      <Width>7.40063in</Width>
+      <Width>8.2017in</Width>
       <Page>
         <PageHeader>
-          <Height>2.54791in</Height>
+          <Height>1.96876in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Line Name="line1">
-              <Top>2.45416in</Top>
-              <Left>0.2761in</Left>
+              <Top>1.85418in</Top>
+              <Left>0.08366in</Left>
               <Height>0in</Height>
-              <Width>7.10307in</Width>
+              <Width>8.11804in</Width>
               <Style>
                 <Border>
                   <Style>Solid</Style>
@@ -1417,10 +2239,10 @@ SELECT 'Above 10 years',6</CommandText>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.13973in</Top>
-              <Left>2.17644in</Left>
-              <Height>0.6332in</Height>
-              <Width>3.34829in</Width>
+              <Top>0.15418in</Top>
+              <Left>1.47039in</Left>
+              <Height>0.26167in</Height>
+              <Width>5.50331in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -1451,10 +2273,10 @@ SELECT 'Above 10 years',6</CommandText>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.84237in</Top>
-              <Left>0.2761in</Left>
-              <Height>0.24235in</Height>
-              <Width>7.10307in</Width>
+              <Top>0.47141in</Top>
+              <Left>1.45651in</Left>
+              <Height>0.31597in</Height>
+              <Width>5.50331in</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <PaddingLeft>2pt</PaddingLeft>
@@ -1470,7 +2292,8 @@ SELECT 'Above 10 years',6</CommandText>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>="Summary Of DRT Cases as on : " &amp; Parameters!DtEnter.Value</Value>
+                      <Value>="List of Accounts Where Staff Accountability Examined ( " &amp; Parameters!Filter.Label &amp; " )" 
+ &amp; iif(Parameters!From.Value="", " As on " &amp; Parameters!to.Value, iif(Parameters!to.Value=""," Onward " &amp; Parameters!From.Value," During " &amp; Parameters!From.Value &amp; " To " &amp; Parameters!to.Value))</Value>
                       <Style>
                         <FontStyle>=First(Fields!BankAddFontStyle.Value, "dsReportFormat")</FontStyle>
                         <FontFamily>=First(Fields!BankAddFontFamilly.Value, "dsReportFormat")</FontFamily>
@@ -1484,12 +2307,65 @@ SELECT 'Above 10 years',6</CommandText>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>1.15416in</Top>
-              <Left>0.2761in</Left>
-              <Height>0.27084in</Height>
-              <Width>7.10307in</Width>
+              <Top>0.91529in</Top>
+              <Left>0.08366in</Left>
+              <Height>0.20553in</Height>
+              <Width>8.11804in</Width>
               <ZIndex>3</ZIndex>
               <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Image Name="image2">
+              <Source>External</Source>
+              <Value>=First(Fields!ImagePath.Value, "dsReportFormat")</Value>
+              <Sizing>Fit</Sizing>
+              <Top>0.15418in</Top>
+              <Left>0.08366in</Left>
+              <Height>0.64708in</Height>
+              <Width>1.31729in</Width>
+              <ZIndex>4</ZIndex>
+              <Style>
+                <Border />
+              </Style>
+            </Image>
+            <Textbox Name="textbox14">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>=Microsoft.VisualBasic.Interaction.IIF(Parameters!AdminValue.Count = Count(Fields!AdminValue.Value, "dsAdminValue"), First(Fields!DynamicGroupLabel.Value, "dsDynamicGrp_Lbl") &amp; " &lt;All&gt;", Microsoft.VisualBasic.Interaction.IIF(Parameters!AdminValue.Count &gt; 5 And Parameters!AdminValue.Count &lt; Count(Fields!AdminValue.Value, "dsAdminValue"), First(Fields!DynamicGroupLabel.Value, "dsDynamicGrp_Lbl") &amp; " Multi Value Selection", First(Fields!DynamicGroupLabel.Value, "dsDynamicGrp_Lbl") &amp; " " &amp; Microsoft.VisualBasic.Strings.JOIN(Parameters!AdminValue.Label, ", ")))</Value>
+                      <Style>
+                        <FontStyle>=First(Fields!HeaderDetailFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!HeaderDetailFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!HeaderDetailFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!HeaderDetailFontWeight.Value, "dsReportFormat")</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Left</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.21805in</Top>
+              <Left>0.08366in</Left>
+              <Height>0.16667in</Height>
+              <Width>4.22259in</Width>
+              <ZIndex>5</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
                 <PaddingTop>2pt</PaddingTop>
@@ -1503,50 +2379,51 @@ SELECT 'Above 10 years',6</CommandText>
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
+                      <Value>="Amt. in Rs. : " &amp; Parameters!cost.Label</Value>
+                      <Style>
+                        <FontFamily>Verdana</FontFamily>
+                        <FontSize>7pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Right</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <Top>1.23193in</Top>
+              <Left>4.49138in</Left>
+              <Height>0.16667in</Height>
+              <Width>3.71032in</Width>
+              <ZIndex>6</ZIndex>
+              <Visibility>
+                <Hidden>=Microsoft.VisualBasic.Interaction.IIF(First(Fields!BranchVisibility.Value, "dsReportFormat") = "Y", False, True)</Hidden>
+              </Visibility>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <VerticalAlign>Middle</VerticalAlign>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="textbox33">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
                       <Value>=Parameters!SubDynamicGrp.Label</Value>
                       <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <Top>1.49444in</Top>
-              <Left>4.16459in</Left>
-              <Height>0.25in</Height>
-              <Width>3.21458in</Width>
-              <ZIndex>4</ZIndex>
-              <Visibility>
-                <Hidden>=iif(First(Fields!BranchVisibility.Value, "dsReportFormat") ="Y", FALSE, TRUE )</Hidden>
-              </Visibility>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="textbox28">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="(Amt. in Rs. : " &amp; Parameters!cost.Label &amp;")"</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
+                        <FontStyle>=First(Fields!HeaderDetailFontStyle.Value, "dsReportFormat")</FontStyle>
+                        <FontFamily>=First(Fields!HeaderDetailFontFamily.Value, "dsReportFormat")</FontFamily>
+                        <FontSize>=First(Fields!HeaderDetailFontSize.Value, "dsReportFormat")</FontSize>
+                        <FontWeight>=First(Fields!HeaderDetailFontWeight.Value, "dsReportFormat")</FontWeight>
                         <Format>D</Format>
                       </Style>
                     </TextRun>
@@ -1556,175 +2433,15 @@ SELECT 'Above 10 years',6</CommandText>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>2.06389in</Top>
-              <Left>5.20708in</Left>
-              <Height>0.25in</Height>
-              <Width>2.17209in</Width>
-              <ZIndex>5</ZIndex>
-              <Style>
-                <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Image Name="image2">
-              <Source>External</Source>
-              <Value>=First(Fields!ImagePath.Value, "dsReportFormat")</Value>
-              <Sizing>Fit</Sizing>
-              <Top>0.13973in</Top>
-              <Left>0.2761in</Left>
-              <Height>0.64708in</Height>
-              <Width>1.50103in</Width>
-              <ZIndex>6</ZIndex>
-              <Style>
-                <Border />
-              </Style>
-            </Image>
-            <Textbox Name="textbox12">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>=  IIF(Parameters!AdminValue.Count = COUNT(Fields!AdminValue.Value, "dsAdminValue")
-	   ,First(Fields!DynamicGroupLabel.Value, "dsDynamicGrp_Lbl") &amp; " &lt;All&gt;"
-	   ,IIF(Parameters!AdminValue.Count&gt;5 AND Parameters!AdminValue.Count&lt;COUNT(Fields!AdminValue.Value, "dsAdminValue")
-			,First(Fields!DynamicGroupLabel.Value, "dsDynamicGrp_Lbl") &amp; " Multi Value Selection"
-			,First(Fields!DynamicGroupLabel.Value, "dsDynamicGrp_Lbl") &amp; " " &amp; JOIN(Parameters!AdminValue.Label,", ")))</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <Top>2.06389in</Top>
-              <Left>0.2761in</Left>
-              <Height>0.25in</Height>
-              <Width>4.61177in</Width>
+              <Top>1.45416in</Top>
+              <Left>4.49138in</Left>
+              <Height>0.21528in</Height>
+              <Width>3.71032in</Width>
               <ZIndex>7</ZIndex>
-              <Visibility>
-                <Hidden>=Microsoft.VisualBasic.Interaction.iif(First(Fields!RegionVisibility.Value, "dsReportFormat") = "Y", False, True)</Hidden>
-              </Visibility>
               <Style>
                 <Border>
                   <Style>None</Style>
                 </Border>
-                <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="textbox9">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="Record Selected : " &amp; IIF(Parameters!Recordstatus.Value=0,"ALL","Live")</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Left</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <Top>1.49444in</Top>
-              <Left>0.2761in</Left>
-              <Height>0.25in</Height>
-              <Width>1.59478in</Width>
-              <ZIndex>8</ZIndex>
-              <Visibility>
-                <Hidden>=Microsoft.VisualBasic.Interaction.iif(First(Fields!BranchVisibility.Value, "dsReportFormat") = "Y", False, True)</Hidden>
-              </Visibility>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <VerticalAlign>Middle</VerticalAlign>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="Textbox1">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>= "(Range : " &amp; Parameters!Range.Label &amp; " )"</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style />
-                </Paragraph>
-              </Paragraphs>
-              <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>1.82778in</Top>
-              <Left>0.2761in</Left>
-              <Height>0.19792in</Height>
-              <Width>2.68098in</Width>
-              <ZIndex>9</ZIndex>
-              <Style>
-                <Border>
-                  <Style>None</Style>
-                </Border>
-                <PaddingLeft>2pt</PaddingLeft>
-                <PaddingRight>2pt</PaddingRight>
-                <PaddingTop>2pt</PaddingTop>
-                <PaddingBottom>2pt</PaddingBottom>
-              </Style>
-            </Textbox>
-            <Textbox Name="textbox29">
-              <CanGrow>true</CanGrow>
-              <KeepTogether>true</KeepTogether>
-              <Paragraphs>
-                <Paragraph>
-                  <TextRuns>
-                    <TextRun>
-                      <Value>="(Amount : " &amp; Parameters!Amount.Label &amp; ")"</Value>
-                      <Style>
-                        <FontFamily>Verdana</FontFamily>
-                        <FontSize>7pt</FontSize>
-                        <FontWeight>Bold</FontWeight>
-                        <Format>D</Format>
-                      </Style>
-                    </TextRun>
-                  </TextRuns>
-                  <Style>
-                    <TextAlign>Right</TextAlign>
-                  </Style>
-                </Paragraph>
-              </Paragraphs>
-              <Top>1.77396in</Top>
-              <Left>4.65562in</Left>
-              <Height>0.25in</Height>
-              <Width>2.74501in</Width>
-              <ZIndex>10</ZIndex>
-              <Style>
                 <VerticalAlign>Middle</VerticalAlign>
                 <PaddingLeft>2pt</PaddingLeft>
                 <PaddingRight>2pt</PaddingRight>
@@ -1736,15 +2453,15 @@ SELECT 'Above 10 years',6</CommandText>
           <Style />
         </PageHeader>
         <PageFooter>
-          <Height>0.80122in</Height>
+          <Height>0.63872in</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
             <Line Name="line2">
               <Top>0.0625in</Top>
-              <Left>0.2761in</Left>
+              <Left>0.08366in</Left>
               <Height>0in</Height>
-              <Width>7.10307in</Width>
+              <Width>8.11804in</Width>
               <Style>
                 <Border>
                   <Style>Solid</Style>
@@ -1770,10 +2487,10 @@ SELECT 'Above 10 years',6</CommandText>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <Top>0.16961in</Top>
-              <Left>2.06532in</Left>
-              <Height>0.26025in</Height>
-              <Width>1.16908in</Width>
+              <Top>0.16685in</Top>
+              <Left>1.47039in</Left>
+              <Height>0.19427in</Height>
+              <Width>1.48798in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -1802,10 +2519,10 @@ SELECT 'Above 10 years',6</CommandText>
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <Top>0.16961in</Top>
-              <Left>0.2761in</Left>
-              <Height>0.26025in</Height>
-              <Width>1.71978in</Width>
+              <Top>0.16685in</Top>
+              <Left>0.08366in</Left>
+              <Height>0.1987in</Height>
+              <Width>1.31729in</Width>
               <ZIndex>2</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -1836,10 +2553,10 @@ SELECT 'Above 10 years',6</CommandText>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.4993in</Top>
-              <Left>0.2761in</Left>
-              <Height>0.20817in</Height>
-              <Width>3.97835in</Width>
+              <Top>0.40972in</Top>
+              <Left>0.08366in</Left>
+              <Height>0.229in</Height>
+              <Width>2.24743in</Width>
               <ZIndex>3</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -1870,10 +2587,10 @@ SELECT 'Above 10 years',6</CommandText>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.16961in</Top>
-              <Left>3.30384in</Left>
-              <Height>0.26025in</Height>
-              <Width>2.9327in</Width>
+              <Top>0.16685in</Top>
+              <Left>3.02782in</Left>
+              <Height>0.18732in</Height>
+              <Width>3.07354in</Width>
               <ZIndex>4</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -1904,10 +2621,10 @@ SELECT 'Above 10 years',6</CommandText>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.4993in</Top>
-              <Left>4.40823in</Left>
-              <Height>0.20817in</Height>
-              <Width>1.60955in</Width>
+              <Top>0.40972in</Top>
+              <Left>2.38665in</Left>
+              <Height>0.229in</Height>
+              <Width>3.40266in</Width>
               <ZIndex>5</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -1938,10 +2655,10 @@ SELECT 'Above 10 years',6</CommandText>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.4993in</Top>
-              <Left>6.08722in</Left>
-              <Height>0.20817in</Height>
-              <Width>1.29195in</Width>
+              <Top>0.40972in</Top>
+              <Left>5.85875in</Left>
+              <Height>0.229in</Height>
+              <Width>2.34295in</Width>
               <ZIndex>6</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -1972,10 +2689,10 @@ SELECT 'Above 10 years',6</CommandText>
                   </Style>
                 </Paragraph>
               </Paragraphs>
-              <Top>0.16961in</Top>
-              <Left>6.23654in</Left>
-              <Height>0.26025in</Height>
-              <Width>1.14263in</Width>
+              <Top>0.16685in</Top>
+              <Left>6.1708in</Left>
+              <Height>0.17343in</Height>
+              <Width>2.0309in</Width>
               <ZIndex>7</ZIndex>
               <Style>
                 <VerticalAlign>Middle</VerticalAlign>
@@ -1988,14 +2705,12 @@ SELECT 'Above 10 years',6</CommandText>
           </ReportItems>
           <Style />
         </PageFooter>
-        <PageHeight>11.69in</PageHeight>
-        <PageWidth>8.27in</PageWidth>
         <InteractiveHeight>11in</InteractiveHeight>
         <InteractiveWidth>8.5in</InteractiveWidth>
-        <LeftMargin>0.25in</LeftMargin>
-        <RightMargin>0.25in</RightMargin>
-        <TopMargin>0.2in</TopMargin>
-        <BottomMargin>0.2in</BottomMargin>
+        <LeftMargin>0.1in</LeftMargin>
+        <RightMargin>0.1in</RightMargin>
+        <TopMargin>0.1in</TopMargin>
+        <BottomMargin>0.1in</BottomMargin>
         <Style />
       </Page>
     </ReportSection>
@@ -2019,6 +2734,7 @@ SELECT 'Above 10 years',6</CommandText>
           <Value>=Parameters!UserLoginID.Value</Value>
         </Values>
       </DefaultValue>
+      <AllowBlank>true</AllowBlank>
       <Prompt>UserName</Prompt>
       <Hidden>true</Hidden>
     </ReportParameter>
@@ -2046,7 +2762,6 @@ SELECT 'Above 10 years',6</CommandText>
     </ReportParameter>
     <ReportParameter Name="MisLocation">
       <DataType>String</DataType>
-      <Nullable>true</Nullable>
       <DefaultValue>
         <DataSetReference>
           <DataSetName>dsAD</DataSetName>
@@ -2115,7 +2830,7 @@ SELECT 'Above 10 years',6</CommandText>
           <ValueField>ReportTypeValue</ValueField>
         </DataSetReference>
       </DefaultValue>
-      <Prompt>Report Type</Prompt>
+      <Prompt>ReportType</Prompt>
       <Hidden>true</Hidden>
       <ValidValues>
         <DataSetReference>
@@ -2127,7 +2842,7 @@ SELECT 'Above 10 years',6</CommandText>
     </ReportParameter>
     <ReportParameter Name="DynamicGrp">
       <DataType>String</DataType>
-      <Prompt>Dynamic Grp</Prompt>
+      <Prompt>DynamicGrp</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>dsDynamicGrp</DataSetName>
@@ -2141,10 +2856,11 @@ SELECT 'Above 10 years',6</CommandText>
       <DefaultValue>
         <DataSetReference>
           <DataSetName>dsAdminValue</DataSetName>
-          <ValueField>AdminValue</ValueField>
+          <ValueField>AdminValueLable</ValueField>
         </DataSetReference>
       </DefaultValue>
-      <Prompt>Admin Value</Prompt>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>AdminValue</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>dsAdminValue</DataSetName>
@@ -2162,7 +2878,7 @@ SELECT 'Above 10 years',6</CommandText>
           <ValueField>DynamicGroupValue</ValueField>
         </DataSetReference>
       </DefaultValue>
-      <Prompt>Sub Dynamic Grp</Prompt>
+      <Prompt>SubDynamicGrp</Prompt>
       <ValidValues>
         <DataSetReference>
           <DataSetName>dsDynamicGrpSUB</DataSetName>
@@ -2241,7 +2957,7 @@ SELECT 'Above 10 years',6</CommandText>
       </ValidValues>
     </ReportParameter>
     <ReportParameter Name="ReportPath">
-      <DataType>Boolean</DataType>
+      <DataType>String</DataType>
       <Nullable>true</Nullable>
       <DefaultValue>
         <DataSetReference>
@@ -2297,7 +3013,7 @@ SELECT 'Above 10 years',6</CommandText>
       </ValidValues>
     </ReportParameter>
     <ReportParameter Name="Recordstatus">
-      <DataType>String</DataType>
+      <DataType>Integer</DataType>
       <DefaultValue>
         <Values>
           <Value>0</Value>
@@ -2324,53 +3040,34 @@ SELECT 'Above 10 years',6</CommandText>
         </DataSetReference>
       </ValidValues>
     </ReportParameter>
-    <ReportParameter Name="Range">
-      <DataType>String</DataType>
-      <Prompt>Case Filed Date Range</Prompt>
-      <ValidValues>
-        <DataSetReference>
-          <DataSetName>DsRange</DataSetName>
-          <ValueField>Value</ValueField>
-          <LabelField>Label</LabelField>
-        </DataSetReference>
-      </ValidValues>
-    </ReportParameter>
-    <ReportParameter Name="Amount">
-      <DataType>String</DataType>
-      <Prompt>Select Amount</Prompt>
+    <ReportParameter Name="Filter">
+      <DataType>Integer</DataType>
+      <Prompt>Select Filter</Prompt>
       <ValidValues>
         <ParameterValues>
           <ParameterValue>
             <Value>0</Value>
-            <Label>&lt;ALL&gt;</Label>
+            <Label>ALL</Label>
           </ParameterValue>
           <ParameterValue>
             <Value>1</Value>
-            <Label>SuitAmount upto 50lacs</Label>
+            <Label>WAR ROOM</Label>
           </ParameterValue>
           <ParameterValue>
             <Value>2</Value>
-            <Label>SuitAmount between 50lacs and 1crore</Label>
+            <Label>NPA BORROWER</Label>
           </ParameterValue>
           <ParameterValue>
             <Value>3</Value>
-            <Label>SuitAmount between 1crore and 5crores</Label>
+            <Label>OTHERS</Label>
           </ParameterValue>
           <ParameterValue>
             <Value>4</Value>
-            <Label>SuitAmount between 5crores and 10crores</Label>
+            <Label>TWO</Label>
           </ParameterValue>
           <ParameterValue>
             <Value>5</Value>
-            <Label>SuitAmount between 10crores and 25crores</Label>
-          </ParameterValue>
-          <ParameterValue>
-            <Value>6</Value>
-            <Label>SuitAmount between 25crores and 50crores</Label>
-          </ParameterValue>
-          <ParameterValue>
-            <Value>7</Value>
-            <Label>SuitAmount more than 50crores</Label>
+            <Label>WRITTENOFF</Label>
           </ParameterValue>
         </ParameterValues>
       </ValidValues>
@@ -2379,6 +3076,6 @@ SELECT 'Above 10 years',6</CommandText>
   <Language>en-US</Language>
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
-  <rd:ReportServerUrl>http://server2015:1111/ReportServer</rd:ReportServerUrl>
+  <rd:ReportServerUrl>http://192.168.1.104/ReportServer</rd:ReportServerUrl>
   <rd:ReportID>922e81d8-0714-48f8-bd4a-b6c7a471fcba</rd:ReportID>
 </Report>

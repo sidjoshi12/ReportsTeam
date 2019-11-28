@@ -9,6 +9,8 @@ Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "DenaReports", "DenaReports\
 EndProject
 Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "UCOLegalPlus", "UCOLegalPlus\UCOLegalPlus.rptproj", "{48C8A862-14A8-460D-8407-B0112781789D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shashi", "Shashi\Shashi.csproj", "{939AE6D7-B0FD-4B36-8854-D82B6E063546}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,12 @@ Global
 		{48C8A862-14A8-460D-8407-B0112781789D}.Release|Any CPU.ActiveCfg = Release
 		{48C8A862-14A8-460D-8407-B0112781789D}.Release|Any CPU.Build.0 = Release
 		{48C8A862-14A8-460D-8407-B0112781789D}.Release|Any CPU.Deploy.0 = Release
+		{939AE6D7-B0FD-4B36-8854-D82B6E063546}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{939AE6D7-B0FD-4B36-8854-D82B6E063546}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{939AE6D7-B0FD-4B36-8854-D82B6E063546}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{939AE6D7-B0FD-4B36-8854-D82B6E063546}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
+		{939AE6D7-B0FD-4B36-8854-D82B6E063546}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{939AE6D7-B0FD-4B36-8854-D82B6E063546}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

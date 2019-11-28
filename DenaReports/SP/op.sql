@@ -22,28 +22,26 @@ exec [Rpt-SysAdminValue_Grp] @TimeKey=4655
 
 
 exec [UserName]'dm400'
-exec [UserLoginID
-exec [UserLocation
-exec [UserLocationCode
-exec [MisLocation
-exec [DynamicGrp
-exec [Rpt-SysReportVersion	"ReportName
-exec [TimeKey"
-exec [Rpt-SysReportoutputType	ReportType
-exec [Rpt-SysSubDynamicGrp	"UserName
-exec [UserLoginID
-exec [UserLocation
-exec [UserLocationCode
-exec [MisLocation
-exec [DynamicGrp
-exec [ReportType
-exec [CustFacility"
-exec [Rpt-SysReportFormat	
-exec [Rpt-SysReportVersion	"ReportName
-exec [TimeKey"
-exec [Rpt-SysCost	ReportID
-exec [Rpt-SysReportFormat	
-exec [Rpt-SysReportFormat	
-exec [Rpt-SysReportFormat	
-exec [Rpt-SysReportVersion	"ReportName
-exec [TimeKey"
+exec [UserLoginID]
+exec [UserLocation]
+exec [UserLocationCode]
+exec [MisLocation]
+exec [DynamicGrp]
+exec [Rpt-SysReportVersion]
+exec [Rpt-SysReportoutputType]
+exec [Rpt-SysSubDynamicGrp]
+exec [UserLoginID]
+exec [UserLocation]
+exec [UserLocationCode]
+exec [MisLocation]
+exec [DynamicGrp]
+exec [ReportType]
+exec [CustFacility]
+exec [Rpt-SysReportFormat]	
+exec [Rpt-SysReportVersion]
+exec [Rpt-SysCost]
+exec [Rpt-SysReportFormat]	
+exec [Rpt-SysReportFormat]	
+exec [Rpt-SysReportFormat]	
+exec [Rpt-SysReportVersion]
+
