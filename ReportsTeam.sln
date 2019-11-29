@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "TestProject1", "TestProject1\TestProject1.rptproj", "{C585A3E2-1B42-43BE-BF2F-FF2DC7DD92F1}"
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "ReportsTeam", "ReportsTeam\ReportsTeam.rptproj", "{C585A3E2-1B42-43BE-BF2F-FF2DC7DD92F1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{E3A33659-1E81-4CD2-91CB-35BF9D92B931}"
 EndProject

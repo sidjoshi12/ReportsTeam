@@ -52,7 +52,11 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>LimeGreen</BackgroundColor>
+                        <BackgroundColor>Orange</BackgroundColor>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>Bar</Value>
+                        </BackgroundImage>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -85,7 +89,11 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>LimeGreen</BackgroundColor>
+                        <BackgroundColor>Orange</BackgroundColor>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>Bar</Value>
+                        </BackgroundImage>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -118,7 +126,11 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>LimeGreen</BackgroundColor>
+                        <BackgroundColor>Orange</BackgroundColor>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>Bar</Value>
+                        </BackgroundImage>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -151,7 +163,11 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>LimeGreen</BackgroundColor>
+                        <BackgroundColor>Orange</BackgroundColor>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>Bar</Value>
+                        </BackgroundImage>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -184,7 +200,11 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>LimeGreen</BackgroundColor>
+                        <BackgroundColor>Orange</BackgroundColor>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>Bar</Value>
+                        </BackgroundImage>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -217,7 +237,11 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
-                        <BackgroundColor>LimeGreen</BackgroundColor>
+                        <BackgroundColor>Orange</BackgroundColor>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>Bar</Value>
+                        </BackgroundImage>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -596,6 +620,8 @@
         </Border>
       </Style>
     </PageFooter>
+    <PageHeight>8.27in</PageHeight>
+    <PageWidth>11.69in</PageWidth>
     <LeftMargin>1in</LeftMargin>
     <RightMargin>1in</RightMargin>
     <TopMargin>1in</TopMargin>
@@ -645,6 +671,12 @@ FROM            QRYBRANCH</CommandText>
       </Fields>
     </DataSet>
   </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="Bar">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAAcAAAAZCAYAAAD9jjQ4AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAlklEQVR4nHXDsQnCUABF0Ru0cQKxdwz5AzhCEAdwAGP5wBW0MSMEgjv8QkdIk0IlpEzKEEhwgnfgkCSJXEIIcknTVC5Zlsklz3O5FEUhlxijXKqqkkvbtnLpuk4uwzDIZZomuczzLJdxHOXS971cmuYnl8+3lsvrHeVSlk+53G8PuVzOV7kcDye5hN1eLpv1Vi7LxUruH3XOoTECM/oSAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
   <rd:ReportUnitType>Inch</rd:ReportUnitType>
   <rd:ReportID>83a12d09-0944-4b00-a73e-19a26a012861</rd:ReportID>
 </Report>

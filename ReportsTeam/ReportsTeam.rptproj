@@ -18,6 +18,10 @@
       <FullPath>DataSetTest.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>Double.rdl</Name>
+      <FullPath>Double.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Grouping.rdl</Name>
       <FullPath>Grouping.rdl</FullPath>
     </ProjectItem>
@@ -61,10 +65,6 @@
       <Name>TableReport.rdl</Name>
       <FullPath>TableReport.rdl</FullPath>
     </ProjectItem>
-    <ProjectItem>
-      <Name>Double.rdl</Name>
-      <FullPath>Double.rdl</FullPath>
-    </ProjectItem>
   </Reports>
   <Configurations>
     <Configuration>
@@ -74,8 +74,8 @@
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
         <TargetServerURL>http://d2k62/ReportServer_SQLEXPRESS</TargetServerURL>
-        <TargetFolder>TestProject1</TargetFolder>
-        <TargetDataSourceFolder>DS_TestProject1</TargetDataSourceFolder>
+        <TargetFolder>ReportsTeam</TargetFolder>
+        <TargetDataSourceFolder>DS_ReportsTeam</TargetDataSourceFolder>
         <OverwriteDataSources>true</OverwriteDataSources>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>
         <OverwriteDatasets>true</OverwriteDatasets>
