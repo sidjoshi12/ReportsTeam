@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Engine.ExecuteQuery("if object_id('imageControl')is null "
+            Engine.ExecuteQry("if object_id('imageControl')is null "
     + " create table imageControl(id int IDENTITY(1,1),Photo image)");
         }
     }

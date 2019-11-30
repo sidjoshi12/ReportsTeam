@@ -11,20 +11,25 @@ namespace WindowsFormsApplication1
     {
         public static string ErrorMsg = "";
         public static string cnstring="data source=d2k62\\sqlexpress;user id=sa;password=sa123;initial catalog=OVSepPOST";
-        public static void ExecuteQuery(string sql)
+        public static bool ExecuteQry(string qry)
         {
+            ErrorMsg = "";
+            SqlConnection cn = new SqlConnection(cnstring);
+            SqlCommand cmd = new SqlCommand();
+            cn.Open();
+            cmd.Connection = cn;
+            cmd.CommandText = qry;
             try
             {
-                SqlConnection cn = new SqlConnection(cnstring);
-                cn.Open();
-                SqlCommand cmd = new SqlCommand(sql, cn);
-                SqlDataReader dr = cmd.ExecuteReader();
+                cmd.ExecuteNonQuery();
                 cn.Close();
+                return true;
             }
             catch (Exception ex)
             {
-                ErrorMsg = "";
+                cn.Close();
                 ErrorMsg = ex.Message;
+                return false;
             }
         }
         public static DataTable getDataTable(string sql,string tableName="Table1")
