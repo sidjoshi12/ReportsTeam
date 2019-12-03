@@ -18,8 +18,8 @@
       <FullPath>Legal_Plus-170-List of  Accounts Where Staff Accountability Examined.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Legal_Plus-170.rdl</Name>
-      <FullPath>Legal_Plus-170.rdl</FullPath>
+      <Name>Report1.rdl</Name>
+      <FullPath>Report1.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -29,6 +29,7 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetServerURL>http://d2k62/ReportServer_SQLEXPRESS</TargetServerURL>
         <TargetFolder>UCOLegalPlus</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets</TargetDatasetFolder>

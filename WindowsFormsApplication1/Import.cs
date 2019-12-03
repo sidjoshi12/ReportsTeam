@@ -102,6 +102,7 @@ namespace WindowsFormsApplication1
             //lines = lines.Skip(DeleteTopNRows).ToArray();
             //System.IO.File.WriteAllLines(@"D:\data\DimSplCategory.txt", lines);
             Application.Exit();
-        }
+        }             
+
     }
 }

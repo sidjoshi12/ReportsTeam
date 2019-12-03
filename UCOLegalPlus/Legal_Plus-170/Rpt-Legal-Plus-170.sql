@@ -28,9 +28,9 @@ DECLARE
 @SubDynamicGrp AS VARCHAR(20)='ZO',
 @MisLocation AS VARCHAR(20)='',
 @cost as float=1,
-@DtEnter as varchar(20)='27/11/2019',--'08-071-2019',
+@DtEnter as varchar(20)='30/11/2019',--'08-071-2019',
 @From as varchar(20)='',
-@to as varchar(20)='27/11/2019',--'08-071-2019',
+@to as varchar(20)='30/11/2019',--'08-071-2019',
 @Recordstatus AS int=0,
 @Tier INT=3,
 @Filter	INT=0
