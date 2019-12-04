@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Code.getDateDiff("01/jan/2019","04/dec/2019")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox7</rd:DefaultName>
+        <Top>0.78in</Top>
+        <Left>0.48833in</Left>
+        <Height>0.25in</Height>
+        <Width>1in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>2in</Height>
+    <Style />
+  </Body>
+  <Width>6.5in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource1">
+      <DataSourceReference>mySharedDataSource</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>e7d33d5f-4e79-4823-be69-8b73f08ecbf3</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>DataSource1</DataSourceName>
+        <CommandText>select * from reprwms where mark=0</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="BranchCode">
+          <DataField>BranchCode</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Acid">
+          <DataField>Acid</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BaselCatmark">
+          <DataField>BaselCatmark</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RwResExp">
+          <DataField>RwResExp</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Balance">
+          <DataField>Balance</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="CRM">
+          <DataField>CRM</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="RiskExposure">
+          <DataField>RiskExposure</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Mark">
+          <DataField>Mark</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Activity">
+          <DataField>Activity</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RATING">
+          <DataField>RATING</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Reason">
+          <DataField>Reason</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <Code>Public Shared Function getDateDiff(ByVal startDate As DateTime, ByVal endDate As DateTime) As String
+        Dim endY As Integer = endDate.Year
+        Dim startY As Integer = startDate.Year
+        Dim tempY As Integer = 0
+        Dim endM As Integer = endDate.Month
+        Dim startM As Integer = startDate.Month
+        Dim tempM As Integer = 0
+        Dim endD As Integer = endDate.Day
+        Dim startD As Integer = startDate.Day
+        Dim tempD As Integer = 0
+
+        If endD &gt; startD Then
+            tempD = endD - startD
+        Else
+            endD += DateTime.DaysInMonth(endY, endM)
+            endM -= 1
+            tempD = endD - startD
+        End If
+
+        If endM &gt; startM Then
+            tempM = endM - startM
+        Else
+            endM += 12
+            tempM = endM - startM
+            endY -= 1
+        End If
+
+        tempY = endY - startY
+        Return PadTwo(tempY) &amp; ":" &amp; PadTwo(tempM) &amp; ":" &amp; PadTwo(tempD)
+    End Function
+    Public Shared Function PadTwo(ByVal num As Integer) As String
+        If num &lt; 10 Then
+            Return "0" &amp; num.ToString()
+        Else
+            Return num.ToString()
+        End If
+    End Function</Code>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>4184e031-d3a6-4ff3-9ade-988cebaefd11</rd:ReportID>
+</Report>

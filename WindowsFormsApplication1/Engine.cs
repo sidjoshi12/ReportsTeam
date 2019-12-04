@@ -34,16 +34,25 @@ namespace WindowsFormsApplication1
         }
         public static DataTable getDataTable(string sql,string tableName="Table1")
         {
-            SqlConnection cn = new SqlConnection(cnstring);
-            cn.Open();
-            SqlDataAdapter ad = new SqlDataAdapter(sql, cn);
-            DataTable dt = new DataTable(tableName);
-            ad.Fill(dt);
-            cn.Close();
-            if (dt.Rows.Count > 0)
-                return dt;
-            else
+            ErrorMsg = "";
+            try
+            {
+                SqlConnection cn = new SqlConnection(cnstring);
+                cn.Open();
+                SqlDataAdapter ad = new SqlDataAdapter(sql, cn);
+                DataTable dt = new DataTable(tableName);
+                ad.Fill(dt);
+                cn.Close();
+                if (dt.Rows.Count > 0)
+                    return dt;
+                else
+                    return null;
+            }
+            catch (Exception ex)
+            {
+                ErrorMsg = ex.Message;
                 return null;
+            }
         }
     }
 }
