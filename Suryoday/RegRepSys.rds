@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="RegRepSys">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=DBSERVER\DBSERVER;Initial Catalog=RegRepSys</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>f1911078-e995-4856-9dfb-5a63ee6bf051</DataSourceID>
+</RptDataSource>

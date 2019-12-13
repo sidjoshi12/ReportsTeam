@@ -34,4 +34,23 @@
         xBCP.DataFilePath = txtFileName
         sqlView.ExportData(xBCP)
     End Sub
+
+    'Public Sub priBCPImport(ByRef DatabaseName As String, ByRef strUserID As String, ByRef strPwd As String, ByRef txtFileName As String, ByRef ServerName As String, ByRef TableName As String)
+    Public Sub priBCPImport(ByRef txtFileName As String, ByRef TableName As String)
+
+        On Error GoTo priNextTable
+        strTable = sqlDataBase.Tables.Item(TableName)
+
+        xBCP.DataFilePath = txtFileName
+
+        strTable.ImportData(xBCP)
+
+        Exit Sub
+
+priNextTable:
+        If Err.Number = -2147199728 Then
+            Exit Sub
+        End If
+
+    End Sub
 End Class

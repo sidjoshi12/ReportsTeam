@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="mySharedDataSource">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=DBSERVER\DBSERVER;Initial Catalog=SSFB_MISDB</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>f43b30ae-6765-4fef-abfe-f88e9966d592</DataSourceID>
+</RptDataSource>

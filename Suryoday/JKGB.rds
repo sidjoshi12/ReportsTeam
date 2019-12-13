@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="JKGB">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=DBSERVER\DBSERVER;Initial Catalog=JKGB_MISDB_DEV</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>c3da1d6e-ec76-4f69-87f2-979858108e80</DataSourceID>
+</RptDataSource>

@@ -38,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lblServer = new System.Windows.Forms.Label();
             this.lblPass = new System.Windows.Forms.Label();
+            this.fontSelection1 = new WindowsFormsApplication1.FontSelection();
             this.SuspendLayout();
             // 
             // cmbDB
@@ -138,11 +139,22 @@
             this.lblPass.TabIndex = 11;
             this.lblPass.Text = "Pass";
             // 
+            // fontSelection1
+            // 
+            this.fontSelection1.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.fontSelection1.Expand = false;
+            this.fontSelection1.Location = new System.Drawing.Point(15, 211);
+            this.fontSelection1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.fontSelection1.Name = "fontSelection1";
+            this.fontSelection1.Size = new System.Drawing.Size(234, 22);
+            this.fontSelection1.TabIndex = 13;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(262, 245);
+            this.Controls.Add(this.fontSelection1);
             this.Controls.Add(this.lblPass);
             this.Controls.Add(this.lblServer);
             this.Controls.Add(this.label3);
@@ -175,6 +187,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblServer;
         private System.Windows.Forms.Label lblPass;
+        private FontSelection fontSelection1;
     }
 }
 

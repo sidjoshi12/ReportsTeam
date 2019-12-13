@@ -34,13 +34,15 @@ Partial Class Form1
         Me.cmbPass = New System.Windows.Forms.ComboBox()
         Me.cmbUID = New System.Windows.Forms.ComboBox()
         Me.cmbServer = New System.Windows.Forms.ComboBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.cmbTimeKey = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'label7
         '
         Me.label7.AutoSize = True
         Me.label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.label7.Location = New System.Drawing.Point(29, 174)
+        Me.label7.Location = New System.Drawing.Point(29, 214)
         Me.label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.label7.Name = "label7"
         Me.label7.Size = New System.Drawing.Size(45, 16)
@@ -54,7 +56,7 @@ Partial Class Form1
         Me.cmbAction.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbAction.FormattingEnabled = True
         Me.cmbAction.Items.AddRange(New Object() {"Export", "Import"})
-        Me.cmbAction.Location = New System.Drawing.Point(113, 166)
+        Me.cmbAction.Location = New System.Drawing.Point(113, 206)
         Me.cmbAction.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbAction.Name = "cmbAction"
         Me.cmbAction.Size = New System.Drawing.Size(203, 24)
@@ -62,7 +64,7 @@ Partial Class Form1
         '
         'btnCancel
         '
-        Me.btnCancel.Location = New System.Drawing.Point(241, 210)
+        Me.btnCancel.Location = New System.Drawing.Point(241, 250)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(75, 28)
         Me.btnCancel.TabIndex = 25
@@ -71,7 +73,7 @@ Partial Class Form1
         '
         'btnOK
         '
-        Me.btnOK.Location = New System.Drawing.Point(113, 210)
+        Me.btnOK.Location = New System.Drawing.Point(113, 250)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(75, 28)
         Me.btnOK.TabIndex = 24
@@ -126,7 +128,6 @@ Partial Class Form1
         '
         Me.cmbDB.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDB.FormattingEnabled = True
-        Me.cmbDB.Items.AddRange(New Object() {"OVSepPOST", "UCO_LEGAL_PLUS"})
         Me.cmbDB.Location = New System.Drawing.Point(113, 133)
         Me.cmbDB.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbDB.Name = "cmbDB"
@@ -137,7 +138,6 @@ Partial Class Form1
         '
         Me.cmbPass.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbPass.FormattingEnabled = True
-        Me.cmbPass.Items.AddRange(New Object() {"sa123", "1808"})
         Me.cmbPass.Location = New System.Drawing.Point(113, 99)
         Me.cmbPass.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbPass.Name = "cmbPass"
@@ -148,7 +148,6 @@ Partial Class Form1
         '
         Me.cmbUID.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbUID.FormattingEnabled = True
-        Me.cmbUID.Items.AddRange(New Object() {"sa", "dm085"})
         Me.cmbUID.Location = New System.Drawing.Point(113, 66)
         Me.cmbUID.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbUID.Name = "cmbUID"
@@ -159,18 +158,40 @@ Partial Class Form1
         '
         Me.cmbServer.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbServer.FormattingEnabled = True
-        Me.cmbServer.Items.AddRange(New Object() {"D2K62\SQLEXPRESS", "DBSERVER2\DBSERVER2"})
         Me.cmbServer.Location = New System.Drawing.Point(113, 33)
         Me.cmbServer.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbServer.Name = "cmbServer"
         Me.cmbServer.Size = New System.Drawing.Size(203, 24)
         Me.cmbServer.TabIndex = 16
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(33, 182)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(65, 16)
+        Me.Label5.TabIndex = 29
+        Me.Label5.Text = "Time Key"
+        '
+        'cmbTimeKey
+        '
+        Me.cmbTimeKey.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbTimeKey.FormattingEnabled = True
+        Me.cmbTimeKey.Location = New System.Drawing.Point(113, 174)
+        Me.cmbTimeKey.Margin = New System.Windows.Forms.Padding(4)
+        Me.cmbTimeKey.Name = "cmbTimeKey"
+        Me.cmbTimeKey.Size = New System.Drawing.Size(203, 24)
+        Me.cmbTimeKey.TabIndex = 28
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(344, 271)
+        Me.ClientSize = New System.Drawing.Size(344, 311)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.cmbTimeKey)
         Me.Controls.Add(Me.label7)
         Me.Controls.Add(Me.cmbAction)
         Me.Controls.Add(Me.btnCancel)
@@ -201,4 +222,6 @@ Partial Class Form1
     Private WithEvents cmbPass As System.Windows.Forms.ComboBox
     Private WithEvents cmbUID As System.Windows.Forms.ComboBox
     Private WithEvents cmbServer As System.Windows.Forms.ComboBox
+    Private WithEvents Label5 As System.Windows.Forms.Label
+    Private WithEvents cmbTimeKey As System.Windows.Forms.ComboBox
 End Class
